@@ -336,14 +336,9 @@ def main():
         for c, lst in drm_fallback.items():
             print(f"   官方源[DRM仅兜底]: {c:8s} {len(lst)} 条 (只有声音无画面, 排末尾)")
     else:
-        # 不实测时, 官方源一律按 DRM 兜底处理 (不确认可解码就不作为主线路)
-        for c in ("CCTV1", "CCTV13"):
-            for tag, host, name in OFFICIAL_CDNS:
-                drm_fallback.setdefault(c, []).append(
-                    {"url": official_url(host, official_key(c)),
-                     "src": f"央视官方CDN·{name}(DRM)", "official": True, "drm": True,
-                     "hint": "ipv4", "cdn": tag, "ok": True, "w": 1280, "h": 720,
-                     "ms": 0, "geo": "cn", "score": 1})
+        # 不实测时也不生成 DRM 兜底源; APTV 会自动跳到后续线路,
+        # 但用户手动选到它们时仍然只能听到声音, 所以直接排除。
+        pass
 
     # ---- 2) 上游社区源 ----
     print("== 拉取上游源 ==")
