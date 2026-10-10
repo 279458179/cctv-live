@@ -1,0 +1,27 @@
+#EXTM3U
+# ===== 2025.9.3 纪念抗战胜利80周年阅兵 完整回放（央视网官方源）=====
+# 完整大会（约103分钟，4档清晰度自适应，最高1280x720）
+#EXTINF:-1 tvg-name="抗战胜利80周年大会(完整)" tvg-logo="https://p1.img.cctvpic.com/fmspic/2025/09/03/6a1a3c5e5d3a4e6c8b7f0e1d2c3b4a5b.jpg" group-title="阅兵80周年",抗战胜利80周年大会·完整版(103min)
+https://dh5wswx02.v.cntv.cn/asp/h5e/hls/main/0303000a/3/default/2a1a5e402fe2424d9569b84e76ed155a/main.m3u8?maxbr=2048&contentid=15120519184043
+
+# 分列式（受阅方队+装备+空中梯队）
+#EXTINF:-1 tvg-name="阅兵分列式" group-title="阅兵80周年",阅兵·分列式(徒步/装备/空中梯队)
+https://dh5wswx02.v.cntv.cn/asp/h5e/hls/main/0303000a/3/default/09f28a46e2ef4bde9eee4a9850ddfefa/main.m3u8?maxbr=2048&contentid=15120519184043
+
+# 习近平检阅受阅部队
+#EXTINF:-1 tvg-name="习近平检阅受阅部队" group-title="阅兵80周年",阅兵·习近平检阅受阅部队
+https://dh5ws01.v.cntv.cn/asp/h5e/hls/main/0303000a/3/default/a1fb65889ee34fb7b6151b6a051b3808/main.m3u8?maxbr=2048&contentid=15120519184043
+
+# ===== 单选清晰度线路（若播放器不自动切换画质，可指定其中一条）=====
+# 1280x720 @2Mbps
+#EXTINF:-1 tvg-name="大会-720P-2M" group-title="阅兵80周年-定码率",大会完整版·720P(2M)
+https://dh5wswx02.v.cntv.cn/asp/h5e/hls/2000/0303000a/3/default/2a1a5e402fe2424d9569b84e76ed155a/2000.m3u8
+# 1280x720 @1.2Mbps
+#EXTINF:-1 tvg-name="大会-720P-1.2M" group-title="阅兵80周年-定码率",大会完整版·720P(1.2M)
+https://dh5wswx02.v.cntv.cn/asp/h5e/hls/1200/0303000a/3/default/2a1a5e402fe2424d9569b84e76ed155a/1200.m3u8
+# 640x360 @850kbps
+#EXTINF:-1 tvg-name="大会-360P" group-title="阅兵80周年-定码率",大会完整版·360P(850k)
+https://dh5wswx02.v.cntv.cn/asp/h5e/hls/850/0303000a/3/default/2a1a5e402fe2424d9569b84e76ed155a/850.m3u8
+# 480x270 @450kbps（弱网备用）
+#EXTINF:-1 tvg-name="大会-270P" group-title="阅兵80周年-定码率",大会完整版·270P(450k,弱网)
+https://dh5wswx02.v.cntv.cn/asp/h5e/hls/450/0303000a/3/default/2a1a5e402fe2424d9569b84e76ed155a/450.m3u8
