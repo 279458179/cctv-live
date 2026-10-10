@@ -45,9 +45,10 @@ CHANNELS = {
     "CCTV4K":  ("CCTV-4K 超高清",    "央视-超高清"),
 }
 
-# ------------------------------------------------- 央视官方 CDN (免鉴权, 仅部分频道)
+# ------------------------------------------------- 央视官方 CDN (最后兜底)
 # 与 tv.cctv.com 网页播放器同源; 路径 /ldncctvwbcd/cdrmld{ch}_1/index.m3u8
-# 无需 Referer / UA, APTV 可直接播放。多 CDN 互备。
+# ⚠️ 注意: cdrmld = China DRM 加密流, 电脑/播放器通常只有声音、无画面。
+#    因此这些源只作为「最后兜底」排在列表末尾, 不作为主线路。
 OFFICIAL_CDNS = [
     ("txy", "ldncctvwbcdtxy.liveplay.myqcloud.com", "腾讯云"),
     ("cnc", "ldncctvwbcdcnc.v.wscdns.com",          "网宿"),
@@ -64,6 +65,39 @@ def official_url(host, ch):
 def official_key(canon):
     """canonical -> 官方路径用的频道名"""
     return canon.lower().replace("+", "plus")
+
+# ------------------------------------------------- 人工核验白名单
+# 逐条抓帧目视确认过「台标/内容确实是对应频道」的源。
+# 这些源优先于自动检测结果, 用于杜绝两类事故:
+#   1) 名不符实 (上游把 CCTV-13 的流标成 CCTV1)
+#   2) 无信号 (测试卡 / 广告 / 404 页面)
+# 格式: 频道 -> [(url, 说明)]
+VERIFIED = {
+    # (url, 分辨率, 延迟ms, 归属地)
+    # 注: 这批源为美国机房 IP, 走国际出口; 国内电信家宽可通但有延迟。
+    "CCTV1": [
+        ("http://38.75.136.137:98/gslb/dsdqbv/cctv1hd.m3u8?auth=test20251009", 1280, 720, 4513, "海外"),
+        ("http://74.91.26.218:82/live/cctv1hd.m3u8", 1280, 720, 4290, "海外"),
+        ("http://107.150.60.122/live/cctv1hd.m3u8", 1280, 720, 3707, "海外"),
+        ("http://198.204.228.26/live/cctv1hd.m3u8", 1280, 720, 4962, "海外"),
+        ("http://173.208.212.130:8181/720p/cctv1.m3u8", 1280, 720, 4303, "海外"),
+    ],
+    "CCTV13": [
+        ("http://74.91.26.218:82/live/cctv13hd.m3u8", 1280, 720, 4289, "海外"),
+        ("http://38.75.136.137:98/gslb/dsdqbv/cctv13hd.m3u8?auth=test20251009", 1280, 720, 4613, "海外"),
+        ("http://107.150.60.122/live/cctv13hd.m3u8", 1280, 720, 3800, "海外"),
+        ("http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv13hd", 1280, 720, 3100, "海外"),
+        ("http://go.bkpcp.top/mg/cctv13", 1280, 720, 2200, "海外"),
+    ],
+}
+
+# 明确「名不符实」的黑名单 (实测台标与标注频道不符 / 无信号)
+BLACKLIST = (
+    "ali-m-l.cztv.com/channels/lantian/channel21",  # 实为 CCTV-13 中国蓝新闻, 被误标为 CCTV1
+    "event.pull.hebtv.com/jishi/cp1",              # TVU networks 测试卡, 静止无信号
+    "bztv.tvbus.cc",                               # 全部频道返回 404 HTML
+    "ldncctvwbcd", "ldncctvwbnd",                  # 央视官方 DRM 加密: 只有声音无画面
+)
 
 # ---------------------------------------------------------------- 工具函数
 def canon_of(name):
@@ -121,8 +155,48 @@ def parse_m3u(text):
             cur = None
     return out
 
+def probe_health(url, timeout, ua="Mozilla/5.0 (AppleTV; APTV)"):
+    """真实解码检测: 实际解出一段画面, 统计解码错误率 + 帧间变化。
+    DRM 加密流 / 死流 / 静止测试卡 都会在这里被识别出来。"""
+    t0 = time.time()
+    frames = 24
+    try:
+        p = subprocess.run(
+            ["ffmpeg", "-v", "error", "-rw_timeout", str(timeout * 1000000),
+             "-user_agent", ua, "-i", url,
+             "-frames:v", str(frames), "-vf", "scale=64:36",
+             "-f", "rawvideo", "-pix_fmt", "gray", "-"],
+            capture_output=True, timeout=timeout + 20)
+    except subprocess.TimeoutExpired:
+        return {"ok": False, "ms": (timeout + 20) * 1000, "timeout": True}
+    except Exception as e:
+        return {"ok": False, "ms": int((time.time() - t0) * 1000), "err": str(e)}
+
+    ms = int((time.time() - t0) * 1000)
+    errs = len(re.findall(
+        rb"error while decoding|top block unavailable|non-existing SPS|Reference \d+ >=|corrupt",
+        p.stderr))
+    fsz = 64 * 36
+    data = p.stdout
+    nf = len(data) // fsz
+    if nf < 4:
+        return {"ok": False, "ms": ms, "why": f"frames={nf}"}
+    prev, diffs = None, []
+    for i in range(nf):
+        f = data[i * fsz:(i + 1) * fsz]
+        if prev is not None:
+            diffs.append(sum(abs(a - b) for a, b in zip(f, prev)) / fsz)
+        prev = f
+    mean_diff = sum(diffs) / len(diffs) if diffs else 0
+    err_rate = errs / nf
+    ok = err_rate < 1.0 and mean_diff > 0.15
+    return {"ok": ok, "ms": ms, "errs": errs, "frames": nf,
+            "err_rate": round(err_rate, 2), "fdiff": round(mean_diff, 2),
+            "why": "" if ok else ("drm/static" if mean_diff <= 0.15 else "decode-errors")}
+
+
 def probe(url, timeout, ua="Mozilla/5.0 (AppleTV; APTV)"):
-    """ffprobe 实测: 分辨率 / 编码 / 响应耗时"""
+    """ffprobe 只读元数据: 分辨率 / 编码 / 响应耗时 (粗筛)"""
     t0 = time.time()
     try:
         p = subprocess.run(
@@ -212,14 +286,14 @@ def geo_of(url, cache):
     return cache.get(h) or cache.get(h.split(":")[0]) or "unknown"
 
 def score(res, geo="unknown", official=False):
-    """分辨率 + 速度 + 线路加成; 官方源额外重奖"""
+    """分辨率 + 速度 + 线路加成 (官方 DRM 源不加分, 仅兜底)"""
     h = res.get("h", 0)
     ms = max(res.get("ms", 9999), 1)
     res_score = (100 if h >= 1080 else 80 if h >= 720 else 55 if h >= 540
                  else 45 if h >= 480 else 30 if h >= 360 else 15)
     speed = max(0, 60 - ms / 200.0)
     geo_bonus = {"cn": 500, "unknown": 0, "overseas": -80}.get(geo, 0)
-    return res_score + speed + geo_bonus + (3000 if official else 0)
+    return res_score + speed + geo_bonus
 
 # ---------------------------------------------------------------- 主流程
 def main():
@@ -233,38 +307,43 @@ def main():
     os.makedirs(DATA_DIR, exist_ok=True)
     cfg = json.load(open(SOURCES, encoding="utf-8"))
 
-    # ---- 1) 官方源 (仅 CCTV1 / CCTV13 实测可达) ----
-    print("== 探测央视官方 CDN ==")
+    # ---- 1) 官方源 ----
+    # 实测结论: 央视官方 CDN 的 cdrmld 路径是 China DRM 加密流, 只有声音无画面,
+    # 因此这里不再探测, 也不把它们放进订阅 (避免用户看到「有声音没画面」)。
+    print("== 央视官方 CDN: 已确认为 DRM 加密(仅声音), 跳过 ==")
     pool = {}          # canonical -> {url: meta}
-    official_hits = {}  # canonical -> [meta]
-    off_tasks = [(c, tag, host, name)
-                 for c in CHANNELS
-                 for tag, host, name in OFFICIAL_CDNS]
-
-    def test_official(t):
-        c, tag, host, name = t
-        u = official_url(host, official_key(c))
-        r = probe(u, args.timeout)
-        return (c, tag, host, name, u, r)
-
-    if not args.no_probe:
+    official_hits = {}  # canonical -> [meta]  真实可解码的官方源
+    drm_fallback = {}   # canonical -> [meta]  DRM 加密的官方源 (仅兜底)
+    off_tasks = []
+    if False:
         with cf.ThreadPoolExecutor(16) as ex:
             for c, tag, host, name, u, r in ex.map(test_official, off_tasks):
                 if r["ok"]:
+                    # 真实可解码 -> 正常线路
                     official_hits.setdefault(c, []).append(
                         {"url": u, "src": f"央视官方CDN·{name}", "official": True,
                          "hint": "ipv4", "cdn": tag, **r,
-                         "geo": "cn", "score": score(r, "cn", official=True)})
+                         "geo": "cn", "score": score(r, "cn")})
+                elif r.get("why") in ("drm/static",):
+                    # DRM 加密: 只有声音没画面 -> 仅作最后兜底
+                    drm_fallback.setdefault(c, []).append(
+                        {"url": u, "src": f"央视官方CDN·{name}(DRM)", "official": True,
+                         "drm": True, "hint": "ipv4", "cdn": tag,
+                         "ok": True, "w": r.get("w", 1280), "h": r.get("h", 720),
+                         "ms": r.get("ms", 0), "geo": "cn", "score": 1})
         for c, lst in official_hits.items():
-            print(f"   官方可用: {c:8s} {len(lst)} 条  ({', '.join(x['cdn'] for x in lst)})")
+            print(f"   官方源[可解码]: {c:8s} {len(lst)} 条")
+        for c, lst in drm_fallback.items():
+            print(f"   官方源[DRM仅兜底]: {c:8s} {len(lst)} 条 (只有声音无画面, 排末尾)")
     else:
-        # 不实测时保守带上 CCTV1/13 的官方源
+        # 不实测时, 官方源一律按 DRM 兜底处理 (不确认可解码就不作为主线路)
         for c in ("CCTV1", "CCTV13"):
             for tag, host, name in OFFICIAL_CDNS:
-                official_hits.setdefault(c, []).append(
-                    {"url": official_url(host, official_key(c)), "src": f"央视官方CDN·{name}",
-                     "official": True, "hint": "ipv4", "cdn": tag,
-                     "ok": True, "w": 0, "h": 0, "ms": 0, "geo": "cn", "score": 3000})
+                drm_fallback.setdefault(c, []).append(
+                    {"url": official_url(host, official_key(c)),
+                     "src": f"央视官方CDN·{name}(DRM)", "official": True, "drm": True,
+                     "hint": "ipv4", "cdn": tag, "ok": True, "w": 1280, "h": 720,
+                     "ms": 0, "geo": "cn", "score": 1})
 
     # ---- 2) 上游社区源 ----
     print("== 拉取上游源 ==")
@@ -275,6 +354,8 @@ def main():
             for nm, url, attrs in ent:
                 c = canon_of(nm)
                 if not c:
+                    continue
+                if any(b in url for b in BLACKLIST):
                     continue
                 pool.setdefault(c, {})
                 if url not in pool[c]:
@@ -291,6 +372,17 @@ def main():
 
     # ---- 3) 实测 + 打分 ----
     results = {}
+    # 人工核验过的源: 直接置顶 (已确认频道内容正确, 免检测)
+    for c, items in VERIFIED.items():
+        results.setdefault(c, [])
+        for url, w, h, ms, gname in items:
+            geo = "cn" if gname == "国内" else "overseas"
+            results[c].append({
+                "url": url, "src": "人工核验", "verified": True,
+                "hint": "ipv4", "ok": True, "w": w, "h": h, "ms": ms,
+                "geo": geo, "score": 900,
+            })
+    print(f"== 载入人工核验源 {sum(len(v) for v in VERIFIED.values())} 条 ==")
     if args.no_probe:
         for c, urls in pool.items():
             results[c] = [{"url": u, **m, "ok": True, "w": 0, "h": 0, "ms": 0, "score": 0}
@@ -312,21 +404,27 @@ def main():
         geo = load_geo_cache()
         geo = resolve_geo([u for _, u, _ in tasks], geo)
         save_geo_cache(geo)
-        print(f"== 实测 {len(tasks)} 条 (并发 {args.workers}, 超时 {args.timeout}s) ==")
+        print(f"== 实测 {len(tasks)} 条 (真实解码检测, 并发 {args.workers}, 超时 {args.timeout}s) ==")
         done = 0
         with cf.ThreadPoolExecutor(args.workers) as ex:
-            fut = {ex.submit(probe, u, args.timeout): (c, u, m) for c, u, m in tasks}
+            fut = {ex.submit(probe_health, u, args.timeout): (c, u, m) for c, u, m in tasks}
             for f in cf.as_completed(fut):
                 c, u, m = fut[f]
                 r = f.result()
                 done += 1
                 if done % 60 == 0:
                     print(f"   进度 {done}/{len(tasks)}")
-                if r["ok"]:
+                if r.get("ok"):
+                    # 解码通过 -> 再取分辨率
+                    meta = probe(u, args.timeout)
+                    if not meta.get("ok"):
+                        continue
                     g = geo_of(u, geo)
                     results.setdefault(c, []).append(
-                        {"url": u, **m, **r, "geo": g,
-                         "score": score(r, g, m.get("official", False))})
+                        {"url": u, **m, "w": meta["w"], "h": meta["h"],
+                         "codec": meta.get("codec", ""), "ms": r["ms"],
+                         "err_rate": r.get("err_rate"), "fdiff": r.get("fdiff"),
+                         "geo": g, "score": score(meta, g)})
         # 本机无法直连的 IPv6 运营商源: 保留上游可信源, 标记为待验证
         keep = 0
         for c, u, m in tasks:
@@ -362,10 +460,17 @@ def main():
         if added:
             print(f"== 为弱频道补充国内兜底源 {added} 条 (本机未通过, 电信网络可试) ==")
 
-        # 排序: 官方源 > 国内线路(实测优先) > 海外线路
-        # 面向国内(电信家宽)用户, 国内线路即便本机未验证, 也优于海外线路
+        # DRM 官方源: 只有声音没画面, 仅作最后兜底 (排到列表末尾)
+        for c, lst in drm_fallback.items():
+            results.setdefault(c, [])
+            for it in lst:
+                if not any(x["url"] == it["url"] for x in results[c]):
+                    results[c].append(dict(it))
+
+        # 排序: 人工核验 > 可解码(国内优先) > 未验证兜底 > 海外 > DRM
         def rank(x):
-            return (0 if x.get("official") else 1,
+            return (0 if x.get("verified") else 1,
+                    1 if x.get("drm") else 0,
                     0 if x.get("geo") == "cn" else 1,
                     0 if not x.get("unverified") else 1,
                     -x.get("score", 0))
@@ -383,20 +488,26 @@ def main():
                  ""]
         n = 0
         for c in CHANNELS:
-            items = [it for it in results.get(c, []) if filt(it)]
+            items = [it for it in results.get(c, [])
+                     if filt(it) and not any(b in it["url"] for b in BLACKLIST)]
             if not items:
                 continue
             disp, grp = CHANNELS[c]
             for i, it in enumerate(items[:6]):
                 tag = "主" if i == 0 else f"备{i}"
                 gtag = {"cn": "国内", "overseas": "海外", "unknown": "未知"}.get(it.get("geo"), "")
-                if it.get("unverified"):
+                if it.get("drm"):
+                    extra = " [DRM加密·仅声音·兜底]"
+                    tag = "兜底"
+                elif it.get("unverified"):
                     extra = f" [IPv6·{gtag}]"
                 elif it.get("h"):
                     extra = f" [{it['w']}x{it['h']}|{it['ms']}ms|{gtag}]"
                 else:
                     extra = f" [{gtag}]"
-                if it.get("official"):
+                if it.get("verified"):
+                    extra += " ✓已核验"
+                elif it.get("official") and not it.get("drm"):
                     extra += " ★官方"
                 lines.append(f'#EXTINF:-1 tvg-id="{c}" tvg-name="{disp}" tvg-logo="" '
                              f'group-title="{grp}",{disp} [{tag}]{extra}')
