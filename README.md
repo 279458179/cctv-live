@@ -100,3 +100,7 @@ python3 scripts/build.py --timeout 8 --workers 32
 本仓库仅收集、整理网络上公开的直播流地址，供个人学习与测试使用，不存储、不转发
 任何视频内容。所有频道内容的版权归原权利人所有。请勿用于商业用途，并在测试后
 自觉支持正版收视途径。
+
+## APTV 本地测试
+
+仓库根目录提供 [cctv-APTV-test.m3u](cctv-APTV-test.m3u) 供临时导入测试；该合集是 2026-10-11 承德电信 IPv4 检测样本，签名可能已过期。频道缺口、检测边界与导入步骤见 [APTV-导入说明.md](APTV-导入说明.md) 和 [覆盖摘要](docs/testing/cctv-ipv4-coverage-2026-10-11.md)。
