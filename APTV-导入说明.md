@@ -1,16 +1,16 @@
-# APTV 导入测试说明
+# APTV 兼容性说明
 
-公开订阅入口：
+订阅地址（当前暂停提供直播线路，不要导入 APTV）：
 
 - 整合版：`https://raw.githubusercontent.com/279458179/cctv-live/main/subscriptions/cctv.m3u`
 - IPv4 版：`https://raw.githubusercontent.com/279458179/cctv-live/main/subscriptions/cctv-ipv4.m3u`
 
-两份文件目前字节相同，均是承德电信 IPv4 测试快照，不含 IPv6。也可用仓库根目录的 `cctv-APTV-test.m3u` 本地导入。
+两份文件目前仅包含暂停说明，没有频道线路。根目录的 `cctv-APTV-test.m3u` 也已清理失效 URL。IPv6 媒体地址已移除。
 
-这是 2026-10-11 检测生成的历史合集：56 条唯一线路，覆盖 16/18 个目标频道。检测时间已超过健康结果复用窗口，部分 URL 带有短时签名，当前可能已经失效；请把它用于 APTV 导入和客户端兼容性测试，不要当作当前稳定订阅。
+旧版 56 条历史媒体直链已撤下。2026-10-11 在承德电信 IPv4 直连网络抽查 CCTV-1 地址时，三条抽查线路均返回 HTTP 403；APTV 截图也显示全部线路超时。旧地址含上游短时签名，不再可用。
 
-频道覆盖为：CCTV1 4、CCTV2 6、CCTV3 4、CCTV4 中文国际 4、CCTV5 0、CCTV5+ 2、CCTV6 5、CCTV7 1、CCTV8 1、CCTV9 3、CCTV10 0、CCTV11 5、CCTV12 5、CCTV13 3、CCTV14 6、CCTV15 2、CCTV16 2、CCTV17 3。CCTV5 和 CCTV10 暂时跳过；只有 CCTV2、CCTV14 达到六条。
+央视官网的直播网页入口可在浏览器或央视影音 App 打开：[直播大全](https://tv.cctv.com/live/m/)。这些网页由官方播放器播放；网页底层接口并非可公开复用的普通 m3u8。官网播放器可能使用 DRM 或会变化的临时地址。
 
-在 APTV 添加本地 M3U/文件订阅，或直接添加上方公开地址。可先测 CCTV1、CCTV4、CCTV5+、CCTV14 的画面和声音，并查看同名条目是否聚合。记录能播放的频道、声音、缓冲情况和播放器内核。播放中自动切备与晚高峰表现仍待实际验证。
+央视官网入口可在浏览器或央视影音 App 打开：[直播大全](https://tv.cctv.com/live/m/)。官网网页 URL 不能作为 APTV m3u8 使用。当前仓库没有有效、可验证的 APTV 直播放源；后续只有在获得公开可用或用户自有授权的兼容流，并验证连续解码后才恢复订阅。
 
-[承德电信 IPv4 覆盖摘要](docs/testing/cctv-ipv4-coverage-2026-10-11.md)列出逐频道线路数与身份核验边界。原始机器报告含签名 URL，保存在本机忽略产物中，没有复制到仓库。
+[诊断记录](docs/testing/cctv-ipv4-coverage-2026-10-11.md)保留旧快照的频道覆盖和失效说明。原始机器报告包含签名 URL，没有公开。
