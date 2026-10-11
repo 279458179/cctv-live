@@ -61,20 +61,6 @@
    "score": 900
   },
   {
-   "url": "https://liveplay-srs.voc.com.cn/hls/tv/134_180adf.m3u8",
-   "attrs": "#EXTINF:-1 tvg-id=\"CCTV1.cn@SD\",CCTV-1",
-   "src": "iptv-org - cn",
-   "hint": "mixed",
-   "w": 1920,
-   "h": 1080,
-   "codec": "h264",
-   "ms": 25463,
-   "err_rate": 0.0,
-   "fdiff": 3.38,
-   "geo": "cn",
-   "score": 600
-  },
-  {
    "url": "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226895/1.m3u8?",
    "attrs": "#EXTINF:-1 tvg-name=\"CCTV1\" tvg-logo=\"https://live.fanmingming.cn/tv/CCTV1.png\" group-title=\"央视频道\",CCTV-1综合",
    "src": "fanmingming/live - ipv6",
@@ -95,25 +81,11 @@
    "w": 1280,
    "h": 720,
    "codec": "h264",
-   "ms": 689,
+   "ms": 1171,
    "err_rate": 0.0,
-   "fdiff": 3.36,
+   "fdiff": 3.41,
    "geo": "overseas",
-   "score": 58.264999999999986
-  },
-  {
-   "url": "http://38.75.136.137:98/gslb/dsdqbv/cctv1hd.m3u8?auth=test20251009",
-   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-1\" tvg-name=\"CCTV-1\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-1.png\" group-title=\"📺央视频道\",CCTV-1",
-   "src": "Guovin/iptv-api - v4",
-   "hint": "ipv4",
-   "w": 1280,
-   "h": 720,
-   "codec": "h264",
-   "ms": 686,
-   "err_rate": 0.0,
-   "fdiff": 3.36,
-   "geo": "overseas",
-   "score": 58.224999999999994
+   "score": 57.375
   },
   {
    "url": "http://204.12.221.218:8181/3m1080p/cctv1.m3u8",
@@ -123,11 +95,11 @@
    "w": 1280,
    "h": 720,
    "codec": "h264",
-   "ms": 909,
+   "ms": 1067,
    "err_rate": 0.0,
-   "fdiff": 3.36,
+   "fdiff": 0.5,
    "geo": "overseas",
-   "score": 56.245000000000005
+   "score": 57.25999999999999
   },
   {
    "url": "http://198.204.228.26/live/cctv1hd.m3u8",
@@ -137,11 +109,25 @@
    "w": 1280,
    "h": 720,
    "codec": "h264",
-   "ms": 955,
+   "ms": 978,
    "err_rate": 0.0,
-   "fdiff": 3.36,
+   "fdiff": 0.5,
    "geo": "overseas",
-   "score": 55.995000000000005
+   "score": 57.21000000000001
+  },
+  {
+   "url": "http://38.75.136.137:98/gslb/dsdqbv/cctv1hd.m3u8?auth=test20251009",
+   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-1\" tvg-name=\"CCTV-1\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-1.png\" group-title=\"📺央视频道\",CCTV-1",
+   "src": "Guovin/iptv-api - v4",
+   "hint": "ipv4",
+   "w": 1280,
+   "h": 720,
+   "codec": "h264",
+   "ms": 3074,
+   "err_rate": 0.0,
+   "fdiff": 3.41,
+   "geo": "overseas",
+   "score": 49.50999999999999
   },
   {
    "url": "http://74.91.26.218:82/live/cctv1hd.m3u8",
@@ -151,11 +137,11 @@
    "w": 1280,
    "h": 720,
    "codec": "h264",
-   "ms": 3451,
+   "ms": 3038,
    "err_rate": 0.0,
-   "fdiff": 3.36,
+   "fdiff": 3.41,
    "geo": "overseas",
-   "score": 47.394999999999996
+   "score": 49.329999999999984
   }
  ],
  "CCTV13": [
@@ -233,6 +219,20 @@
    "score": 60
   },
   {
+   "url": "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv13hd",
+   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-13\" tvg-name=\"CCTV-13\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-13.png\" group-title=\"📺央视频道\",CCTV-13",
+   "src": "Guovin/iptv-api - v4",
+   "hint": "ipv4",
+   "w": 1920,
+   "h": 1080,
+   "codec": "h264",
+   "ms": 676,
+   "err_rate": 0.0,
+   "fdiff": 0.37,
+   "geo": "overseas",
+   "score": 77.22999999999999
+  },
+  {
    "url": "http://74.91.26.218:82/live/cctv13hd.m3u8",
    "attrs": "#EXTINF:-1 tvg-id=\"CCTV-13\" tvg-name=\"CCTV-13\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-13.png\" group-title=\"📺央视频道\",CCTV-13",
    "src": "Guovin/iptv-api - v4",
@@ -240,25 +240,11 @@
    "w": 1280,
    "h": 720,
    "codec": "h264",
-   "ms": 914,
+   "ms": 2497,
    "err_rate": 0.0,
-   "fdiff": 0.17,
+   "fdiff": 5.14,
    "geo": "overseas",
-   "score": 54.420000000000016
-  },
-  {
-   "url": "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv13hd",
-   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-13\" tvg-name=\"CCTV-13\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-13.png\" group-title=\"📺央视频道\",CCTV-13",
-   "src": "Guovin/iptv-api - v4",
-   "hint": "ipv4",
-   "w": 1280,
-   "h": 720,
-   "codec": "h264",
-   "ms": 959,
-   "err_rate": 0.0,
-   "fdiff": 0.17,
-   "geo": "overseas",
-   "score": 53.94499999999999
+   "score": 53.285
   },
   {
    "url": "http://38.75.136.137:98/gslb/dsdqbv/cctv13hd.m3u8?auth=test20251009",
@@ -268,11 +254,11 @@
    "w": 1280,
    "h": 720,
    "codec": "h264",
-   "ms": 903,
+   "ms": 2515,
    "err_rate": 0.0,
-   "fdiff": 0.17,
+   "fdiff": 5.14,
    "geo": "overseas",
-   "score": 43.81999999999999
+   "score": 52.94
   }
  ],
  "CCTV2": [
@@ -310,11 +296,11 @@
    "w": 1920,
    "h": 1080,
    "codec": "h264",
-   "ms": 2430,
+   "ms": 755,
    "err_rate": 0.0,
-   "fdiff": 1.23,
+   "fdiff": 1.75,
    "geo": "overseas",
-   "score": 76.20499999999998
+   "score": 76.64500000000001
   },
   {
    "url": "http://204.12.221.218:8181/3m1080p/cctv2.m3u8",
@@ -324,39 +310,11 @@
    "w": 1280,
    "h": 720,
    "codec": "h264",
-   "ms": 1098,
+   "ms": 654,
    "err_rate": 0.0,
-   "fdiff": 3.94,
+   "fdiff": 4.91,
    "geo": "overseas",
-   "score": 53.870000000000005
-  },
-  {
-   "url": "http://198.204.228.26/live/cctv2hd.m3u8",
-   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-2\" tvg-name=\"CCTV-2\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-2.png\" group-title=\"📺央视频道\",CCTV-2",
-   "src": "Guovin/iptv-api - v4",
-   "hint": "ipv4",
-   "w": 1280,
-   "h": 720,
-   "codec": "h264",
-   "ms": 1099,
-   "err_rate": 0.0,
-   "fdiff": 3.94,
-   "geo": "overseas",
-   "score": 53.465
-  },
-  {
-   "url": "http://74.91.26.218:82/live/cctv2hd.m3u8",
-   "attrs": "#EXTINF:-1 tvg-id=\"CCTV2.cn@SD\",CCTV-2 (720p)",
-   "src": "iptv-org - cn",
-   "hint": "mixed",
-   "w": 1280,
-   "h": 720,
-   "codec": "h264",
-   "ms": 4461,
-   "err_rate": 0.0,
-   "fdiff": 3.94,
-   "geo": "overseas",
-   "score": 47.28
+   "score": 57.38499999999999
   },
   {
    "url": "http://192.151.150.154/live/cctv2hd.m3u8",
@@ -366,11 +324,39 @@
    "w": 1280,
    "h": 720,
    "codec": "h264",
-   "ms": 4375,
+   "ms": 3013,
    "err_rate": 0.0,
-   "fdiff": 3.94,
+   "fdiff": 4.91,
    "geo": "overseas",
-   "score": 26.405
+   "score": 51.724999999999994
+  },
+  {
+   "url": "http://74.91.26.218:82/live/cctv2hd.m3u8",
+   "attrs": "#EXTINF:-1 tvg-id=\"CCTV2.cn@SD\",CCTV-2 (720p)",
+   "src": "iptv-org - cn",
+   "hint": "mixed",
+   "w": 1280,
+   "h": 720,
+   "codec": "h264",
+   "ms": 2980,
+   "err_rate": 0.0,
+   "fdiff": 4.91,
+   "geo": "overseas",
+   "score": 51.704999999999984
+  },
+  {
+   "url": "http://198.204.228.26/live/cctv2hd.m3u8",
+   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-2\" tvg-name=\"CCTV-2\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-2.png\" group-title=\"📺央视频道\",CCTV-2",
+   "src": "Guovin/iptv-api - v4",
+   "hint": "ipv4",
+   "w": 1280,
+   "h": 720,
+   "codec": "h264",
+   "ms": 678,
+   "err_rate": 0.0,
+   "fdiff": 4.91,
+   "geo": "overseas",
+   "score": 48.39499999999998
   }
  ],
  "CCTV3": [
@@ -408,11 +394,25 @@
    "w": 1920,
    "h": 1080,
    "codec": "h264",
-   "ms": 1057,
+   "ms": 667,
    "err_rate": 0.0,
-   "fdiff": 0.87,
+   "fdiff": 1.87,
    "geo": "overseas",
-   "score": 78.275
+   "score": 77.85499999999999
+  },
+  {
+   "url": "http://69.30.245.50/live/cctv3.m3u8",
+   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-3\" tvg-name=\"CCTV-3\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-3.png\" group-title=\"📺央视频道\",CCTV-3",
+   "src": "Guovin/iptv-api - v4",
+   "hint": "ipv4",
+   "w": 1920,
+   "h": 1080,
+   "codec": "h264",
+   "ms": 1134,
+   "err_rate": 0.0,
+   "fdiff": 1.87,
+   "geo": "overseas",
+   "score": 75.46000000000001
   },
   {
    "url": "http://74.91.26.218:82/live/cctv3hd.m3u8",
@@ -422,25 +422,11 @@
    "w": 1280,
    "h": 720,
    "codec": "h264",
-   "ms": 321,
+   "ms": 549,
    "err_rate": 0.0,
-   "fdiff": 1.13,
+   "fdiff": 7.14,
    "geo": "overseas",
-   "score": 58.379999999999995
-  },
-  {
-   "url": "http://69.30.245.50/live/cctv3.m3u8",
-   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-3\" tvg-name=\"CCTV-3\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-3.png\" group-title=\"📺央视频道\",CCTV-3",
-   "src": "Guovin/iptv-api - v4",
-   "hint": "ipv4",
-   "w": 1280,
-   "h": 720,
-   "codec": "h264",
-   "ms": 1896,
-   "err_rate": 0.0,
-   "fdiff": 0.87,
-   "geo": "overseas",
-   "score": 53.170000000000016
+   "score": 57.954999999999984
   },
   {
    "url": "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv3hd",
@@ -450,28 +436,14 @@
    "w": 1280,
    "h": 720,
    "codec": "h264",
-   "ms": 391,
+   "ms": 673,
    "err_rate": 0.0,
-   "fdiff": 1.13,
+   "fdiff": 7.14,
    "geo": "overseas",
-   "score": 51.64499999999998
+   "score": 57.43000000000001
   }
  ],
  "CCTV4": [
-  {
-   "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1791680400-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-442f9768ed49c3157e5a7c3ba71a904c&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
-   "attrs": "#EXTINF:-1 group-title=\"央视台\" tvg-id=\"CCTV-4\" tvg-logo=\"https://live.fanmingming.com/tv/CCTV4.png\",CCTV-4 中文国际",
-   "src": "hujingguang/ChinaIPTV",
-   "hint": "mixed",
-   "w": 1920,
-   "h": 1080,
-   "codec": "h264",
-   "ms": 1113,
-   "err_rate": 0.0,
-   "fdiff": 0.33,
-   "geo": "cn",
-   "score": 655.7049999999999
-  },
   {
    "url": "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226335/1.m3u8?",
    "attrs": "#EXTINF:-1 tvg-name=\"CCTV4\" tvg-logo=\"https://live.fanmingming.cn/tv/CCTV4.png\" group-title=\"央视频道\",CCTV-4中文国际",
@@ -499,20 +471,6 @@
    "score": 60
   },
   {
-   "url": "http://38.75.136.137:98/gslb/dsdqpub/cctv4k.m3u8?auth=testpub",
-   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-4\" tvg-name=\"CCTV-4\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-4.png\" group-title=\"📺央视频道\",CCTV-4",
-   "src": "Guovin/iptv-api - v4",
-   "hint": "ipv4",
-   "w": 1920,
-   "h": 1080,
-   "codec": "h264",
-   "ms": 1532,
-   "err_rate": 0.0,
-   "fdiff": 2.87,
-   "geo": "overseas",
-   "score": 73.285
-  },
-  {
    "url": "http://173.208.212.130:8181/1080p/cctv4.m3u8",
    "attrs": "#EXTINF:-1 tvg-id=\"CCTV-4\" tvg-name=\"CCTV-4\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-4.png\" group-title=\"📺央视频道\",CCTV-4",
    "src": "Guovin/iptv-api - v4",
@@ -520,11 +478,25 @@
    "w": 1920,
    "h": 1080,
    "codec": "h264",
-   "ms": 1916,
+   "ms": 1241,
    "err_rate": 0.0,
-   "fdiff": 0.3,
+   "fdiff": 2.1,
    "geo": "overseas",
-   "score": 72.49000000000001
+   "score": 74.58500000000001
+  },
+  {
+   "url": "http://107.150.60.122/live/cctv4hd.m3u8",
+   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-4\" tvg-name=\"CCTV-4\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-4.png\" group-title=\"📺央视频道\",CCTV-4",
+   "src": "Guovin/iptv-api - v4",
+   "hint": "ipv4",
+   "w": 1920,
+   "h": 1080,
+   "codec": "h264",
+   "ms": 1042,
+   "err_rate": 0.0,
+   "fdiff": 0.59,
+   "geo": "overseas",
+   "score": 73.345
   },
   {
    "url": "http://74.91.26.218:82/live/cctv4hd.m3u8",
@@ -534,25 +506,11 @@
    "w": 1280,
    "h": 720,
    "codec": "h264",
-   "ms": 348,
+   "ms": 2363,
    "err_rate": 0.0,
-   "fdiff": 0.26,
+   "fdiff": 5.0,
    "geo": "overseas",
-   "score": 57.77000000000001
-  },
-  {
-   "url": "http://107.150.60.122/live/cctv4hd.m3u8",
-   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-4\" tvg-name=\"CCTV-4\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-4.png\" group-title=\"📺央视频道\",CCTV-4",
-   "src": "Guovin/iptv-api - v4",
-   "hint": "ipv4",
-   "w": 1280,
-   "h": 720,
-   "codec": "h264",
-   "ms": 2138,
-   "err_rate": 0.0,
-   "fdiff": 0.31,
-   "geo": "overseas",
-   "score": 57.045000000000016
+   "score": 51.94
   },
   {
    "url": "http://207.56.13.146:81/cdnlive/cctv4.m3u8",
@@ -562,25 +520,11 @@
    "w": 1280,
    "h": 720,
    "codec": "h264",
-   "ms": 1935,
+   "ms": 1908,
    "err_rate": 0.0,
-   "fdiff": 0.66,
+   "fdiff": 1.64,
    "geo": "overseas",
-   "score": 50.99000000000001
-  },
-  {
-   "url": "https://dash2.antik.sk/live/test_cctv_tizen/playlist.m3u8",
-   "attrs": "#EXTINF:-1 tvg-name=\"CCTV-4 中文国际（欧）\" tvg-logo=\"https://i.imgur.com/kx8metk.png\" tvg-id=\"CCTV4Europe.cn\" tvg-chno=\"5\" tvg-country=\"CN\" group-title=\"China\",CCTV-4 中文国际（欧）",
-   "src": "Free-TV/IPTV",
-   "hint": "mixed",
-   "w": 1280,
-   "h": 720,
-   "codec": "h264",
-   "ms": 2080,
-   "err_rate": 0.0,
-   "fdiff": 0.28,
-   "geo": "overseas",
-   "score": 50.724999999999994
+   "score": 44.565
   }
  ],
  "CCTV5": [
@@ -618,11 +562,25 @@
    "w": 1920,
    "h": 1080,
    "codec": "h264",
-   "ms": 3280,
+   "ms": 1395,
    "err_rate": 0.0,
-   "fdiff": 10.29,
+   "fdiff": 1.57,
    "geo": "overseas",
-   "score": 68.78
+   "score": 74.72
+  },
+  {
+   "url": "http://107.150.60.122/live/cctv5hd.m3u8",
+   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-5\" tvg-name=\"CCTV-5\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-5.png\" group-title=\"📺央视频道\",CCTV-5",
+   "src": "Guovin/iptv-api - v4",
+   "hint": "ipv4",
+   "w": 1920,
+   "h": 1080,
+   "codec": "h264",
+   "ms": 1329,
+   "err_rate": 0.0,
+   "fdiff": 0.33,
+   "geo": "overseas",
+   "score": 74.475
   },
   {
    "url": "http://38.75.136.137:98/gslb/dsdqpub/cctv5p.m3u8?auth=testpub",
@@ -632,25 +590,11 @@
    "w": 1920,
    "h": 1080,
    "codec": "h264",
-   "ms": 1548,
+   "ms": 2721,
    "err_rate": 0.0,
-   "fdiff": 0.25,
+   "fdiff": 5.45,
    "geo": "overseas",
-   "score": 64.725
-  },
-  {
-   "url": "http://107.150.60.122/live/cctv5hd.m3u8",
-   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-5\" tvg-name=\"CCTV-5\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-5.png\" group-title=\"📺央视频道\",CCTV-5",
-   "src": "Guovin/iptv-api - v4",
-   "hint": "ipv4",
-   "w": 1280,
-   "h": 720,
-   "codec": "h264",
-   "ms": 1778,
-   "err_rate": 0.0,
-   "fdiff": 3.3,
-   "geo": "overseas",
-   "score": 52.91
+   "score": 64.555
   },
   {
    "url": "http://207.56.13.146:81/cdnlive/cctv5.m3u8",
@@ -660,11 +604,11 @@
    "w": 1280,
    "h": 720,
    "codec": "h264",
-   "ms": 2090,
+   "ms": 1571,
    "err_rate": 0.0,
-   "fdiff": 0.31,
+   "fdiff": 13.58,
    "geo": "overseas",
-   "score": 45.56
+   "score": 48.704999999999984
   }
  ],
  "CCTV5+": [
@@ -676,11 +620,11 @@
    "w": 1920,
    "h": 1080,
    "codec": "h264",
-   "ms": 2911,
+   "ms": 4275,
    "err_rate": 0.0,
-   "fdiff": 0.56,
+   "fdiff": 8.21,
    "geo": "cn",
-   "score": 641.585
+   "score": 644.51
   },
   {
    "url": "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226894/1.m3u8?",
@@ -742,11 +686,11 @@
    "w": 1280,
    "h": 720,
    "codec": "h264",
-   "ms": 593,
+   "ms": 1011,
    "err_rate": 0.0,
-   "fdiff": 15.62,
+   "fdiff": 8.97,
    "geo": "overseas",
-   "score": 53.69
+   "score": 57.56999999999999
   }
  ],
  "CCTV6": [
@@ -764,48 +708,6 @@
    "score": 60
   },
   {
-   "url": "http://74.91.26.218:82/live/cctv6hd.m3u8",
-   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-6\" tvg-name=\"CCTV-6\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-6.png\" group-title=\"📺央视频道\",CCTV-6",
-   "src": "Guovin/iptv-api - v4",
-   "hint": "ipv4",
-   "w": 1280,
-   "h": 720,
-   "codec": "h264",
-   "ms": 529,
-   "err_rate": 0.0,
-   "fdiff": 3.18,
-   "geo": "overseas",
-   "score": 58.389999999999986
-  },
-  {
-   "url": "http://198.204.228.26/live/cctv6hd.m3u8",
-   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-6\" tvg-name=\"CCTV-6\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-6.png\" group-title=\"📺央视频道\",CCTV-6",
-   "src": "Guovin/iptv-api - v4",
-   "hint": "ipv4",
-   "w": 1280,
-   "h": 720,
-   "codec": "h264",
-   "ms": 1129,
-   "err_rate": 0.0,
-   "fdiff": 3.18,
-   "geo": "overseas",
-   "score": 57.535
-  },
-  {
-   "url": "http://198.204.240.250:82/live/cctv6.m3u8",
-   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-6\" tvg-name=\"CCTV-6\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-6.png\" group-title=\"📺央视频道\",CCTV-6",
-   "src": "Guovin/iptv-api - v4",
-   "hint": "ipv4",
-   "w": 1280,
-   "h": 720,
-   "codec": "h264",
-   "ms": 1185,
-   "err_rate": 0.0,
-   "fdiff": 3.18,
-   "geo": "overseas",
-   "score": 57.295000000000016
-  },
-  {
    "url": "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv6hd",
    "attrs": "#EXTINF:-1 tvg-id=\"CCTV-6\" tvg-name=\"CCTV-6\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-6.png\" group-title=\"📺央视频道\",CCTV-6",
    "src": "Guovin/iptv-api - v4",
@@ -813,11 +715,11 @@
    "w": 1280,
    "h": 720,
    "codec": "h264",
-   "ms": 579,
+   "ms": 681,
    "err_rate": 0.0,
-   "fdiff": 3.18,
+   "fdiff": 6.99,
    "geo": "overseas",
-   "score": 43.11
+   "score": 57.44
   },
   {
    "url": "http://69.30.245.50/live/cctv6.m3u8",
@@ -827,11 +729,53 @@
    "w": 1280,
    "h": 720,
    "codec": "h264",
-   "ms": 1121,
+   "ms": 514,
    "err_rate": 0.0,
-   "fdiff": 3.18,
+   "fdiff": 6.99,
    "geo": "overseas",
-   "score": 38.46000000000001
+   "score": 57.28999999999999
+  },
+  {
+   "url": "http://198.204.240.250:82/live/cctv6.m3u8",
+   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-6\" tvg-name=\"CCTV-6\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-6.png\" group-title=\"📺央视频道\",CCTV-6",
+   "src": "Guovin/iptv-api - v4",
+   "hint": "ipv4",
+   "w": 1280,
+   "h": 720,
+   "codec": "h264",
+   "ms": 701,
+   "err_rate": 0.0,
+   "fdiff": 6.99,
+   "geo": "overseas",
+   "score": 57.13499999999999
+  },
+  {
+   "url": "http://198.204.228.26/live/cctv6hd.m3u8",
+   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-6\" tvg-name=\"CCTV-6\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-6.png\" group-title=\"📺央视频道\",CCTV-6",
+   "src": "Guovin/iptv-api - v4",
+   "hint": "ipv4",
+   "w": 1280,
+   "h": 720,
+   "codec": "h264",
+   "ms": 605,
+   "err_rate": 0.0,
+   "fdiff": 6.99,
+   "geo": "overseas",
+   "score": 57.014999999999986
+  },
+  {
+   "url": "http://74.91.26.218:82/live/cctv6hd.m3u8",
+   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-6\" tvg-name=\"CCTV-6\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-6.png\" group-title=\"📺央视频道\",CCTV-6",
+   "src": "Guovin/iptv-api - v4",
+   "hint": "ipv4",
+   "w": 1280,
+   "h": 720,
+   "codec": "h264",
+   "ms": 1636,
+   "err_rate": 0.0,
+   "fdiff": 6.99,
+   "geo": "overseas",
+   "score": 43.825
   }
  ],
  "CCTV7": [
@@ -849,18 +793,17 @@
    "score": 60
   },
   {
-   "url": "http://107.150.60.122/live/cctv7hd.m3u8",
-   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-7\" tvg-name=\"CCTV-7\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-7.png\" group-title=\"📺央视频道\",CCTV-7",
-   "src": "Guovin/iptv-api - v4",
-   "hint": "ipv4",
-   "w": 1920,
-   "h": 1080,
-   "codec": "h264",
-   "ms": 1505,
-   "err_rate": 0.0,
-   "fdiff": 0.15,
-   "geo": "overseas",
-   "score": 72.58500000000001
+   "url": "http://gslbserv.itv.cmvideo.cn/1000000001000024341/1.m3u8?channel-id=ystenlive&Contentid=1000000001000024341&livemode=1&stbId=3",
+   "attrs": "#EXTINF:-1 tvg-name=\"CCTV7\" tvg-logo=\"https://live.fanmingming.com/tv/CCTV7.png\" group-title=\"央视\",CCTV 7",
+   "src": "fanmingming/live - itv",
+   "hint": "mixed",
+   "ok": true,
+   "w": 0,
+   "h": 0,
+   "ms": 0,
+   "unverified": true,
+   "geo": "cn",
+   "score": 55
   },
   {
    "url": "http://74.91.26.218:82/live/cctv7hd.m3u8",
@@ -870,39 +813,11 @@
    "w": 1280,
    "h": 720,
    "codec": "h264",
-   "ms": 773,
+   "ms": 1697,
    "err_rate": 0.0,
-   "fdiff": 4.05,
+   "fdiff": 0.29,
    "geo": "overseas",
-   "score": 58.465
-  },
-  {
-   "url": "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv7hd",
-   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-7\" tvg-name=\"CCTV-7\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-7.png\" group-title=\"📺央视频道\",CCTV-7",
-   "src": "Guovin/iptv-api - v4",
-   "hint": "ipv4",
-   "w": 1280,
-   "h": 720,
-   "codec": "h264",
-   "ms": 1457,
-   "err_rate": 0.0,
-   "fdiff": 0.31,
-   "geo": "overseas",
-   "score": 58.07499999999999
-  },
-  {
-   "url": "http://69.30.245.50/live/cctv7.m3u8",
-   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-7\" tvg-name=\"CCTV-7\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-7.png\" group-title=\"📺央视频道\",CCTV-7",
-   "src": "Guovin/iptv-api - v4",
-   "hint": "ipv4",
-   "w": 1920,
-   "h": 1080,
-   "codec": "h264",
-   "ms": 1921,
-   "err_rate": 0.0,
-   "fdiff": 0.94,
-   "geo": "overseas",
-   "score": 54.59
+   "score": 54.245000000000005
   },
   {
    "url": "http://207.56.13.146:81/cdnlive/cctv7.m3u8",
@@ -912,11 +827,11 @@
    "w": 1280,
    "h": 720,
    "codec": "h264",
-   "ms": 1782,
+   "ms": 2174,
    "err_rate": 0.0,
-   "fdiff": 0.74,
+   "fdiff": 0.63,
    "geo": "overseas",
-   "score": 50.079999999999984
+   "score": 49.639999999999986
   }
  ],
  "CCTV8": [
@@ -941,11 +856,11 @@
    "w": 1920,
    "h": 1080,
    "codec": "h264",
-   "ms": 743,
+   "ms": 668,
    "err_rate": 0.0,
-   "fdiff": 1.97,
+   "fdiff": 0.81,
    "geo": "overseas",
-   "score": 78.31
+   "score": 75.43
   },
   {
    "url": "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv8k",
@@ -955,11 +870,11 @@
    "w": 1920,
    "h": 1080,
    "codec": "h264",
-   "ms": 913,
+   "ms": 727,
    "err_rate": 0.0,
-   "fdiff": 1.97,
+   "fdiff": 0.81,
    "geo": "overseas",
-   "score": 77.975
+   "score": 69.76999999999998
   },
   {
    "url": "http://69.30.245.50/live/cctv8.m3u8",
@@ -969,11 +884,11 @@
    "w": 1280,
    "h": 720,
    "codec": "h264",
-   "ms": 856,
+   "ms": 432,
    "err_rate": 0.0,
-   "fdiff": 2.09,
+   "fdiff": 1.95,
    "geo": "overseas",
-   "score": 57.349999999999994
+   "score": 58.264999999999986
   },
   {
    "url": "http://74.91.26.218:82/live/cctv8hd.m3u8",
@@ -983,11 +898,11 @@
    "w": 1280,
    "h": 720,
    "codec": "h264",
-   "ms": 1488,
+   "ms": 1456,
    "err_rate": 0.0,
-   "fdiff": 0.6,
+   "fdiff": 1.95,
    "geo": "overseas",
-   "score": 53.06999999999999
+   "score": 54.110000000000014
   },
   {
    "url": "http://207.56.13.146:81/cdnlive/cctv8.m3u8",
@@ -997,11 +912,11 @@
    "w": 1280,
    "h": 720,
    "codec": "h264",
-   "ms": 1706,
+   "ms": 2010,
    "err_rate": 0.0,
-   "fdiff": 0.31,
+   "fdiff": 7.73,
    "geo": "overseas",
-   "score": 46.05500000000001
+   "score": 50.23000000000002
   }
  ],
  "CCTV9": [
@@ -1039,25 +954,25 @@
    "w": 1920,
    "h": 1080,
    "codec": "h264",
-   "ms": 1515,
+   "ms": 1829,
    "err_rate": 0.0,
-   "fdiff": 7.59,
+   "fdiff": 1.03,
    "geo": "overseas",
-   "score": 67.20499999999998
+   "score": 66.91499999999999
   },
   {
    "url": "http://192.151.150.154/live/cctv9hd.m3u8",
    "attrs": "#EXTINF:-1 tvg-id=\"CCTV-9\" tvg-name=\"CCTV-9\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-9.png\" group-title=\"📺央视频道\",CCTV-9",
    "src": "Guovin/iptv-api - v4",
    "hint": "ipv4",
-   "w": 1280,
-   "h": 720,
+   "w": 1920,
+   "h": 1080,
    "codec": "h264",
-   "ms": 2097,
+   "ms": 1139,
    "err_rate": 0.0,
-   "fdiff": 17.48,
+   "fdiff": 1.03,
    "geo": "overseas",
-   "score": 58.525000000000006
+   "score": 62.16499999999999
   },
   {
    "url": "http://74.91.26.218:82/live/cctv9hd.m3u8",
@@ -1067,11 +982,11 @@
    "w": 1280,
    "h": 720,
    "codec": "h264",
-   "ms": 937,
+   "ms": 560,
    "err_rate": 0.0,
-   "fdiff": 9.62,
+   "fdiff": 2.34,
    "geo": "overseas",
-   "score": 56.64500000000001
+   "score": 58.004999999999995
   },
   {
    "url": "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv9hd",
@@ -1081,11 +996,11 @@
    "w": 1280,
    "h": 720,
    "codec": "h264",
-   "ms": 898,
+   "ms": 1029,
    "err_rate": 0.0,
-   "fdiff": 17.48,
+   "fdiff": 2.51,
    "geo": "overseas",
-   "score": 56.44499999999999
+   "score": 52.254999999999995
   },
   {
    "url": "http://107.150.60.122/live/cctv9hd.m3u8",
@@ -1095,25 +1010,25 @@
    "w": 1920,
    "h": 1080,
    "codec": "h264",
-   "ms": 717,
+   "ms": 2797,
    "err_rate": 0.0,
-   "fdiff": 0.23,
+   "fdiff": 1.39,
    "geo": "overseas",
-   "score": 55.63499999999999
+   "score": 50.155
   },
   {
-   "url": "https://v4-702cae17a28d6e4f0c0002bba021d934.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=210400aee68d494fef9c3cbbd38a65ee",
+   "url": "https://v4-e6b1c5baf4e240fe63adbf68dda23435.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=2e8cfd44d693e175b1fdad8815204076",
    "attrs": "#EXTINF:-1 group-title=\"央视台\" tvg-id=\"CCTV-9\" tvg-logo=\"https://live.fanmingming.com/tv/CCTV9.png\",CCTV-9 纪录",
    "src": "hujingguang/ChinaIPTV",
    "hint": "mixed",
    "w": 720,
    "h": 576,
    "codec": "h264",
-   "ms": 13082,
+   "ms": 4214,
    "err_rate": 0.0,
-   "fdiff": 11.61,
+   "fdiff": 3.04,
    "geo": "overseas",
-   "score": 13.760000000000005
+   "score": 12.105000000000004
   }
  ],
  "CCTV10": [
@@ -1144,6 +1059,20 @@
    "score": 60
   },
   {
+   "url": "http://69.30.245.50/live/cctv10.m3u8",
+   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-10\" tvg-name=\"CCTV-10\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-10.png\" group-title=\"📺央视频道\",CCTV-10",
+   "src": "Guovin/iptv-api - v4",
+   "hint": "ipv4",
+   "w": 1920,
+   "h": 1080,
+   "codec": "h264",
+   "ms": 1747,
+   "err_rate": 0.0,
+   "fdiff": 2.62,
+   "geo": "overseas",
+   "score": 62.82499999999999
+  },
+  {
    "url": "http://38.75.136.137:98/gslb/dsdqbv/cctv10hd.m3u8?auth=test20251009",
    "attrs": "#EXTINF:-1 tvg-id=\"CCTV-10\" tvg-name=\"CCTV-10\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-10.png\" group-title=\"📺央视频道\",CCTV-10",
    "src": "Guovin/iptv-api - v4",
@@ -1151,11 +1080,11 @@
    "w": 1280,
    "h": 720,
    "codec": "h264",
-   "ms": 438,
+   "ms": 508,
    "err_rate": 0.0,
-   "fdiff": 3.86,
+   "fdiff": 2.8,
    "geo": "overseas",
-   "score": 58.474999999999994
+   "score": 58.110000000000014
   },
   {
    "url": "http://74.91.26.218:82/live/cctv10hd.m3u8",
@@ -1165,25 +1094,11 @@
    "w": 1280,
    "h": 720,
    "codec": "h264",
-   "ms": 329,
+   "ms": 478,
    "err_rate": 0.0,
-   "fdiff": 3.86,
+   "fdiff": 2.16,
    "geo": "overseas",
-   "score": 58.360000000000014
-  },
-  {
-   "url": "http://69.30.245.50/live/cctv10.m3u8",
-   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-10\" tvg-name=\"CCTV-10\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-10.png\" group-title=\"📺央视频道\",CCTV-10",
-   "src": "Guovin/iptv-api - v4",
-   "hint": "ipv4",
-   "w": 1920,
-   "h": 1080,
-   "codec": "h264",
-   "ms": 1759,
-   "err_rate": 0.0,
-   "fdiff": 3.82,
-   "geo": "overseas",
-   "score": 55.045000000000016
+   "score": 58.00999999999999
   },
   {
    "url": "http://204.12.221.218:8181/3m1080p/cctv10.m3u8",
@@ -1193,11 +1108,11 @@
    "w": 1920,
    "h": 1080,
    "codec": "h264",
-   "ms": 1736,
+   "ms": 1057,
    "err_rate": 0.0,
-   "fdiff": 3.82,
+   "fdiff": 2.62,
    "geo": "overseas",
-   "score": 53.545000000000016
+   "score": 51.379999999999995
   },
   {
    "url": "https://cdn4.skygo.mn/live/disk1/CCTV-10/HLSv3-FTA/CCTV-10.m3u8",
@@ -1207,11 +1122,11 @@
    "w": 720,
    "h": 576,
    "codec": "h264",
-   "ms": 11442,
+   "ms": 12019,
    "err_rate": 0.0,
-   "fdiff": 1.93,
+   "fdiff": 4.01,
    "geo": "overseas",
-   "score": -25
+   "score": -12.810000000000002
   }
  ],
  "CCTV11": [
@@ -1229,20 +1144,6 @@
    "score": 60
   },
   {
-   "url": "http://38.75.136.137:98/gslb/dsdqpub/cctv11hd.m3u8?auth=testpub",
-   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-11\" tvg-name=\"CCTV-11\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-11.png\" group-title=\"📺央视频道\",CCTV-11",
-   "src": "Guovin/iptv-api - v4",
-   "hint": "ipv4",
-   "w": 1920,
-   "h": 1080,
-   "codec": "h264",
-   "ms": 2374,
-   "err_rate": 0.0,
-   "fdiff": 0.61,
-   "geo": "overseas",
-   "score": 74.01499999999999
-  },
-  {
    "url": "http://204.12.221.218:8181/3m1080p/cctv11.m3u8",
    "attrs": "#EXTINF:-1 tvg-id=\"CCTV-11\" tvg-name=\"CCTV-11\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-11.png\" group-title=\"📺央视频道\",CCTV-11",
    "src": "Guovin/iptv-api - v4",
@@ -1250,11 +1151,11 @@
    "w": 1920,
    "h": 1080,
    "codec": "h264",
-   "ms": 2065,
+   "ms": 2258,
    "err_rate": 0.0,
-   "fdiff": 0.61,
+   "fdiff": 1.53,
    "geo": "overseas",
-   "score": 70.11500000000001
+   "score": 72.745
   },
   {
    "url": "http://198.204.228.26/live/cctv11hd.m3u8",
@@ -1264,11 +1165,25 @@
    "w": 1920,
    "h": 1080,
    "codec": "h264",
-   "ms": 2069,
+   "ms": 2159,
    "err_rate": 0.0,
-   "fdiff": 0.61,
+   "fdiff": 1.53,
    "geo": "overseas",
-   "score": 59.625
+   "score": 66.92500000000001
+  },
+  {
+   "url": "http://38.75.136.137:98/gslb/dsdqpub/cctv11hd.m3u8?auth=testpub",
+   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-11\" tvg-name=\"CCTV-11\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-11.png\" group-title=\"📺央视频道\",CCTV-11",
+   "src": "Guovin/iptv-api - v4",
+   "hint": "ipv4",
+   "w": 1920,
+   "h": 1080,
+   "codec": "h264",
+   "ms": 1158,
+   "err_rate": 0.0,
+   "fdiff": 1.53,
+   "geo": "overseas",
+   "score": 66.24000000000001
   },
   {
    "url": "http://74.91.26.218:82/live/cctv11hd.m3u8",
@@ -1278,11 +1193,11 @@
    "w": 1280,
    "h": 720,
    "codec": "h264",
-   "ms": 362,
+   "ms": 5498,
    "err_rate": 0.0,
-   "fdiff": 3.72,
+   "fdiff": 11.64,
    "geo": "overseas",
-   "score": 58.504999999999995
+   "score": 58.25
   },
   {
    "url": "http://38.75.136.137:98/gslb/dsdqbv/cctv11hd.m3u8?auth=test20251009",
@@ -1292,11 +1207,11 @@
    "w": 1280,
    "h": 720,
    "codec": "h264",
-   "ms": 408,
+   "ms": 444,
    "err_rate": 0.0,
-   "fdiff": 3.72,
+   "fdiff": 3.67,
    "geo": "overseas",
-   "score": 56.44999999999999
+   "score": 58.14500000000001
   }
  ],
  "CCTV12": [
@@ -1334,11 +1249,11 @@
    "w": 1920,
    "h": 1080,
    "codec": "h264",
-   "ms": 2577,
+   "ms": 1265,
    "err_rate": 0.0,
-   "fdiff": 4.89,
+   "fdiff": 2.9,
    "geo": "overseas",
-   "score": 77.445
+   "score": 73.08500000000001
   },
   {
    "url": "http://204.12.221.218:8181/3m1080p/cctv12.m3u8",
@@ -1348,39 +1263,11 @@
    "w": 1920,
    "h": 1080,
    "codec": "h264",
-   "ms": 2609,
+   "ms": 3271,
    "err_rate": 0.0,
-   "fdiff": 0.16,
+   "fdiff": 2.9,
    "geo": "overseas",
-   "score": 65.86000000000001
-  },
-  {
-   "url": "http://107.150.60.122/live/cctv12hd.m3u8",
-   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-12\" tvg-name=\"CCTV-12\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-12.png\" group-title=\"📺央视频道\",CCTV-12",
-   "src": "Guovin/iptv-api - v4",
-   "hint": "ipv4",
-   "w": 1920,
-   "h": 1080,
-   "codec": "h264",
-   "ms": 333,
-   "err_rate": 0.0,
-   "fdiff": 0.15,
-   "geo": "overseas",
-   "score": 61.98000000000002
-  },
-  {
-   "url": "http://74.91.26.218:82/live/cctv12hd.m3u8",
-   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-12\" tvg-name=\"CCTV-12\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-12.png\" group-title=\"📺央视频道\",CCTV-12",
-   "src": "Guovin/iptv-api - v4",
-   "hint": "ipv4",
-   "w": 1280,
-   "h": 720,
-   "codec": "h264",
-   "ms": 553,
-   "err_rate": 0.0,
-   "fdiff": 0.15,
-   "geo": "overseas",
-   "score": 57.254999999999995
+   "score": 68.33500000000001
   },
   {
    "url": "http://38.75.136.137:98/gslb/dsdqbv/cctv12hd.m3u8?auth=test20251009",
@@ -1390,11 +1277,39 @@
    "w": 1280,
    "h": 720,
    "codec": "h264",
-   "ms": 347,
+   "ms": 422,
    "err_rate": 0.0,
-   "fdiff": 0.15,
+   "fdiff": 0.43,
    "geo": "overseas",
-   "score": 57.17500000000001
+   "score": 58.25999999999999
+  },
+  {
+   "url": "http://74.91.26.218:82/live/cctv12hd.m3u8",
+   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-12\" tvg-name=\"CCTV-12\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-12.png\" group-title=\"📺央视频道\",CCTV-12",
+   "src": "Guovin/iptv-api - v4",
+   "hint": "ipv4",
+   "w": 1280,
+   "h": 720,
+   "codec": "h264",
+   "ms": 760,
+   "err_rate": 0.0,
+   "fdiff": 0.43,
+   "geo": "overseas",
+   "score": 56.285
+  },
+  {
+   "url": "http://107.150.60.122/live/cctv12hd.m3u8",
+   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-12\" tvg-name=\"CCTV-12\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-12.png\" group-title=\"📺央视频道\",CCTV-12",
+   "src": "Guovin/iptv-api - v4",
+   "hint": "ipv4",
+   "w": 1920,
+   "h": 1080,
+   "codec": "h264",
+   "ms": 6623,
+   "err_rate": 0.0,
+   "fdiff": 2.9,
+   "geo": "overseas",
+   "score": 42.81
   }
  ],
  "CCTV14": [
@@ -1412,32 +1327,18 @@
    "score": 60
   },
   {
-   "url": "http://204.12.221.218:8181/3m1080p/cctv14.m3u8",
-   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-14\" tvg-name=\"CCTV-14\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-14.png\" group-title=\"📺央视频道\",CCTV-14",
+   "url": "http://74.91.26.218:82/live/cctv14hd.m3u8",
+   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-14\" tvg-name=\"CCTV-14\" tvg-logo=\"https://i.imgur.com/c5SXW7i.png\" group-title=\"📺央视频道\",CCTV-14",
    "src": "Guovin/iptv-api - v4",
    "hint": "ipv4",
    "w": 1280,
    "h": 720,
    "codec": "h264",
-   "ms": 1127,
+   "ms": 519,
    "err_rate": 0.0,
-   "fdiff": 3.34,
+   "fdiff": 5.07,
    "geo": "overseas",
-   "score": 56.34
-  },
-  {
-   "url": "http://198.204.228.26/live/cctv14hd.m3u8",
-   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-14\" tvg-name=\"CCTV-14\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-14.png\" group-title=\"📺央视频道\",CCTV-14",
-   "src": "Guovin/iptv-api - v4",
-   "hint": "ipv4",
-   "w": 1280,
-   "h": 720,
-   "codec": "h264",
-   "ms": 1136,
-   "err_rate": 0.0,
-   "fdiff": 3.34,
-   "geo": "overseas",
-   "score": 53.860000000000014
+   "score": 58.065
   },
   {
    "url": "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv14hd",
@@ -1447,11 +1348,39 @@
    "w": 1280,
    "h": 720,
    "codec": "h264",
-   "ms": 921,
+   "ms": 1569,
    "err_rate": 0.0,
-   "fdiff": 3.34,
+   "fdiff": 5.07,
    "geo": "overseas",
-   "score": 52.565
+   "score": 57.78999999999999
+  },
+  {
+   "url": "http://198.204.228.26/live/cctv14hd.m3u8",
+   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-14\" tvg-name=\"CCTV-14\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-14.png\" group-title=\"📺央视频道\",CCTV-14",
+   "src": "Guovin/iptv-api - v4",
+   "hint": "ipv4",
+   "w": 1280,
+   "h": 720,
+   "codec": "h264",
+   "ms": 4334,
+   "err_rate": 0.0,
+   "fdiff": 0.34,
+   "geo": "overseas",
+   "score": 57.16499999999999
+  },
+  {
+   "url": "http://204.12.221.218:8181/3m1080p/cctv14.m3u8",
+   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-14\" tvg-name=\"CCTV-14\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-14.png\" group-title=\"📺央视频道\",CCTV-14",
+   "src": "Guovin/iptv-api - v4",
+   "hint": "ipv4",
+   "w": 1280,
+   "h": 720,
+   "codec": "h264",
+   "ms": 463,
+   "err_rate": 0.0,
+   "fdiff": 5.07,
+   "geo": "overseas",
+   "score": 57.16
   },
   {
    "url": "http://38.75.136.137:98/gslb/dsdqbv/cctv14hd.m3u8?auth=test20251009",
@@ -1461,42 +1390,14 @@
    "w": 1280,
    "h": 720,
    "codec": "h264",
-   "ms": 1173,
+   "ms": 531,
    "err_rate": 0.0,
-   "fdiff": 3.34,
+   "fdiff": 5.07,
    "geo": "overseas",
-   "score": 52.5
-  },
-  {
-   "url": "http://74.91.26.218:82/live/cctv14hd.m3u8",
-   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-14\" tvg-name=\"CCTV-14\" tvg-logo=\"https://i.imgur.com/c5SXW7i.png\" group-title=\"📺央视频道\",CCTV-14",
-   "src": "Guovin/iptv-api - v4",
-   "hint": "ipv4",
-   "w": 1280,
-   "h": 720,
-   "codec": "h264",
-   "ms": 874,
-   "err_rate": 0.0,
-   "fdiff": 3.34,
-   "geo": "overseas",
-   "score": 52.345
+   "score": 54.349999999999994
   }
  ],
  "CCTV15": [
-  {
-   "url": "http://120.76.248.139/live/bfgd/4200000133.m3u8",
-   "attrs": "#EXTINF:-1 group-title=\"央视频道\",CCTV15",
-   "src": "wwb521/live - tv",
-   "hint": "mixed",
-   "w": 1920,
-   "h": 1080,
-   "codec": "h264",
-   "ms": 2848,
-   "err_rate": 0.0,
-   "fdiff": 0.19,
-   "geo": "cn",
-   "score": 648.505
-  },
   {
    "url": "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226333/1.m3u8?",
    "attrs": "#EXTINF:-1 tvg-name=\"CCTV15\" tvg-logo=\"https://live.fanmingming.cn/tv/CCTV15.png\" group-title=\"央视频道\",CCTV-15音乐",
@@ -1537,20 +1438,6 @@
    "score": 60
   },
   {
-   "url": "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv15hd",
-   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-15\" tvg-name=\"CCTV-15\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-15.png\" group-title=\"📺央视频道\",CCTV-15",
-   "src": "Guovin/iptv-api - v4",
-   "hint": "ipv4",
-   "w": 1280,
-   "h": 720,
-   "codec": "h264",
-   "ms": 1375,
-   "err_rate": 0.0,
-   "fdiff": 5.67,
-   "geo": "overseas",
-   "score": 57.18000000000001
-  },
-  {
    "url": "http://204.12.221.218:8181/3m1080p/cctv15.m3u8",
    "attrs": "#EXTINF:-1 tvg-id=\"CCTV-15\" tvg-name=\"CCTV-15\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-15.png\" group-title=\"📺央视频道\",CCTV-15",
    "src": "Guovin/iptv-api - v4",
@@ -1558,25 +1445,11 @@
    "w": 1280,
    "h": 720,
    "codec": "h264",
-   "ms": 1644,
+   "ms": 647,
    "err_rate": 0.0,
-   "fdiff": 5.67,
+   "fdiff": 16.73,
    "geo": "overseas",
-   "score": 55.905
-  },
-  {
-   "url": "http://198.204.228.26/live/cctv15hd.m3u8",
-   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-15\" tvg-name=\"CCTV-15\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-15.png\" group-title=\"📺央视频道\",CCTV-15",
-   "src": "Guovin/iptv-api - v4",
-   "hint": "ipv4",
-   "w": 1280,
-   "h": 720,
-   "codec": "h264",
-   "ms": 1608,
-   "err_rate": 0.0,
-   "fdiff": 5.67,
-   "geo": "overseas",
-   "score": 55.31
+   "score": 58.06999999999999
   },
   {
    "url": "http://74.91.26.218:82/live/cctv15hd.m3u8",
@@ -1586,11 +1459,39 @@
    "w": 1280,
    "h": 720,
    "codec": "h264",
-   "ms": 1338,
+   "ms": 1859,
    "err_rate": 0.0,
-   "fdiff": 5.67,
+   "fdiff": 2.78,
    "geo": "overseas",
-   "score": 51.754999999999995
+   "score": 58.03999999999999
+  },
+  {
+   "url": "http://198.204.228.26/live/cctv15hd.m3u8",
+   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-15\" tvg-name=\"CCTV-15\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-15.png\" group-title=\"📺央视频道\",CCTV-15",
+   "src": "Guovin/iptv-api - v4",
+   "hint": "ipv4",
+   "w": 1280,
+   "h": 720,
+   "codec": "h264",
+   "ms": 650,
+   "err_rate": 0.0,
+   "fdiff": 16.73,
+   "geo": "overseas",
+   "score": 57.889999999999986
+  },
+  {
+   "url": "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv15hd",
+   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-15\" tvg-name=\"CCTV-15\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-15.png\" group-title=\"📺央视频道\",CCTV-15",
+   "src": "Guovin/iptv-api - v4",
+   "hint": "ipv4",
+   "w": 1280,
+   "h": 720,
+   "codec": "h264",
+   "ms": 674,
+   "err_rate": 0.0,
+   "fdiff": 16.73,
+   "geo": "overseas",
+   "score": 57.57499999999999
   },
   {
    "url": "http://38.75.136.137:98/gslb/dsdqbv/cctv15hd.m3u8?auth=test20251009",
@@ -1600,11 +1501,11 @@
    "w": 1280,
    "h": 720,
    "codec": "h264",
-   "ms": 1664,
+   "ms": 679,
    "err_rate": 0.0,
-   "fdiff": 5.67,
+   "fdiff": 16.73,
    "geo": "overseas",
-   "score": 42.224999999999994
+   "score": 52.139999999999986
   }
  ],
  "CCTV16": [
@@ -1642,11 +1543,11 @@
    "w": 1920,
    "h": 1080,
    "codec": "h264",
-   "ms": 1546,
+   "ms": 1138,
    "err_rate": 0.0,
-   "fdiff": 4.47,
+   "fdiff": 3.31,
    "geo": "overseas",
-   "score": 73.71000000000001
+   "score": 73.84
   },
   {
    "url": "http://38.75.136.137:98/gslb/dsdqbv/cctv16hd.m3u8?auth=test20251009",
@@ -1656,11 +1557,11 @@
    "w": 1280,
    "h": 720,
    "codec": "h264",
-   "ms": 1433,
+   "ms": 483,
    "err_rate": 0.0,
-   "fdiff": 2.98,
+   "fdiff": 3.58,
    "geo": "overseas",
-   "score": 58.22999999999999
+   "score": 58.095
   },
   {
    "url": "http://207.56.13.146:81/cdnlive/cctv16.m3u8",
@@ -1670,28 +1571,14 @@
    "w": 1280,
    "h": 720,
    "codec": "h264",
-   "ms": 2397,
+   "ms": 3815,
    "err_rate": 0.0,
-   "fdiff": 12.68,
+   "fdiff": 6.43,
    "geo": "overseas",
-   "score": 39.185
+   "score": 52.595
   }
  ],
  "CCTV17": [
-  {
-   "url": "http://120.76.248.139/live/bfgd/4200000204.m3u8",
-   "attrs": "#EXTINF:-1 group-title=\"央视频道\",CCTV17",
-   "src": "wwb521/live - tv",
-   "hint": "mixed",
-   "w": 1920,
-   "h": 1080,
-   "codec": "h264",
-   "ms": 4548,
-   "err_rate": 0.0,
-   "fdiff": 2.59,
-   "geo": "cn",
-   "score": 644.925
-  },
   {
    "url": "http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221226318/1.m3u8?",
    "attrs": "#EXTINF:-1 tvg-name=\"CCTV17\" tvg-logo=\"https://live.fanmingming.cn/tv/CCTV17.png\" group-title=\"央视频道\",CCTV-17农业农村",
@@ -1719,20 +1606,6 @@
    "score": 60
   },
   {
-   "url": "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv17hd",
-   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-17\" tvg-name=\"CCTV-17\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-17.png\" group-title=\"📺央视频道\",CCTV-17",
-   "src": "Guovin/iptv-api - v4",
-   "hint": "ipv4",
-   "w": 1920,
-   "h": 1080,
-   "codec": "h264",
-   "ms": 4247,
-   "err_rate": 0.0,
-   "fdiff": 12.68,
-   "geo": "overseas",
-   "score": 76.6
-  },
-  {
    "url": "http://74.91.26.218:82/live/cctv17hd.m3u8",
    "attrs": "#EXTINF:-1 tvg-id=\"CCTV-17\" tvg-name=\"CCTV-17\" tvg-logo=\"https://i.imgur.com/jSQURxS.png\" group-title=\"📺央视频道\",CCTV-17",
    "src": "Guovin/iptv-api - v4",
@@ -1740,11 +1613,25 @@
    "w": 1920,
    "h": 1080,
    "codec": "h264",
-   "ms": 469,
+   "ms": 681,
    "err_rate": 0.0,
-   "fdiff": 0.39,
+   "fdiff": 3.83,
    "geo": "overseas",
-   "score": 74.34
+   "score": 77.92500000000001
+  },
+  {
+   "url": "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv17hd",
+   "attrs": "#EXTINF:-1 tvg-id=\"CCTV-17\" tvg-name=\"CCTV-17\" tvg-logo=\"https://www.xn--rgv465a.top/tvlogo/CCTV-17.png\" group-title=\"📺央视频道\",CCTV-17",
+   "src": "Guovin/iptv-api - v4",
+   "hint": "ipv4",
+   "w": 1920,
+   "h": 1080,
+   "codec": "h264",
+   "ms": 997,
+   "err_rate": 0.0,
+   "fdiff": 4.21,
+   "geo": "overseas",
+   "score": 72.03999999999999
   },
   {
    "url": "http://38.75.136.137:98/gslb/dsdqbv/cctv17hd.m3u8?auth=test20251009",
@@ -1754,32 +1641,31 @@
    "w": 1280,
    "h": 720,
    "codec": "h264",
-   "ms": 460,
+   "ms": 651,
    "err_rate": 0.0,
-   "fdiff": 1.51,
+   "fdiff": 4.21,
    "geo": "overseas",
-   "score": 57.43000000000001
+   "score": 57.900000000000006
   }
  ],
  "CCTV4K": [
   {
-   "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1791680400-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-39b6f5c519f3bff594a4b72406a64d0e&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
-   "attrs": "#EXTINF:-1 group-title=\"央视台\" tvg-id=\"CCTV-4k\" tvg-logo=\"https://live.fanmingming.com/tv/CCTV4.png\",CCTV-4K 高清",
-   "src": "hujingguang/ChinaIPTV",
-   "hint": "mixed",
-   "w": 1920,
-   "h": 1080,
-   "codec": "h264",
-   "ms": 1406,
-   "err_rate": 0.0,
-   "fdiff": 0.27,
-   "geo": "cn",
-   "score": 656.5
-  },
-  {
    "url": "http://ott.js.chinamobile.com/TVOD/3/224/3221228242/index.m3u8",
    "attrs": "#EXTINF:-1 group-title=\"限江苏地区H264\",CCTV 4K",
    "src": "vamoschuck/TV",
+   "hint": "mixed",
+   "ok": true,
+   "w": 0,
+   "h": 0,
+   "ms": 0,
+   "unverified": true,
+   "geo": "cn",
+   "score": 55
+  },
+  {
+   "url": "https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1791766800-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-7d9ba6a496e64bbd73a833c6622a2f0a&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c",
+   "attrs": "#EXTINF:-1 group-title=\"央视台\" tvg-id=\"CCTV-4k\" tvg-logo=\"https://live.fanmingming.com/tv/CCTV4.png\",CCTV-4K 高清",
+   "src": "hujingguang/ChinaIPTV",
    "hint": "mixed",
    "ok": true,
    "w": 0,
