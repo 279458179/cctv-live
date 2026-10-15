@@ -1,6 +1,6 @@
 #EXTM3U
 # ===== CCTV 直播订阅 (自动生成, 请勿手动编辑) =====
-# 生成时间: 2026-10-11 10:14:45
+# 生成时间: 2026-10-15 21:06:57
 # 线路范围: 仅 IPv4
 # APTV 导入: 设置 -> 订阅 -> 添加订阅 -> 粘贴本文件 raw 地址
 
@@ -14,114 +14,120 @@ http://107.150.60.122/live/cctv1hd.m3u8
 http://198.204.228.26/live/cctv1hd.m3u8
 #EXTINF:-1 tvg-id="CCTV1" tvg-name="CCTV-1 综合" tvg-logo="" group-title="央视-综合",CCTV-1 综合 [备4] [1280x720|4303ms|海外] ✓已核验
 http://173.208.212.130:8181/720p/cctv1.m3u8
-#EXTINF:-1 tvg-id="CCTV1" tvg-name="CCTV-1 综合" tvg-logo="" group-title="央视-综合",CCTV-1 综合 [备5] [1280x720|1171ms|海外]
+#EXTINF:-1 tvg-id="CCTV1" tvg-name="CCTV-1 综合" tvg-logo="" group-title="央视-综合",CCTV-1 综合 [备5] [1280x720|2775ms|海外]
 http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv1hd
-#EXTINF:-1 tvg-id="CCTV2" tvg-name="CCTV-2 财经" tvg-logo="" group-title="央视-财经",CCTV-2 财经 [主] [1920x1080|755ms|海外]
+#EXTINF:-1 tvg-id="CCTV2" tvg-name="CCTV-2 财经" tvg-logo="" group-title="央视-财经",CCTV-2 财经 [主] [1920x1080|472ms|海外]
 http://107.150.60.122/live/cctv2hd.m3u8
-#EXTINF:-1 tvg-id="CCTV2" tvg-name="CCTV-2 财经" tvg-logo="" group-title="央视-财经",CCTV-2 财经 [备1] [1280x720|654ms|海外]
-http://204.12.221.218:8181/3m1080p/cctv2.m3u8
-#EXTINF:-1 tvg-id="CCTV2" tvg-name="CCTV-2 财经" tvg-logo="" group-title="央视-财经",CCTV-2 财经 [备2] [1280x720|3013ms|海外]
-http://192.151.150.154/live/cctv2hd.m3u8
-#EXTINF:-1 tvg-id="CCTV2" tvg-name="CCTV-2 财经" tvg-logo="" group-title="央视-财经",CCTV-2 财经 [备3] [1280x720|2980ms|海外]
+#EXTINF:-1 tvg-id="CCTV2" tvg-name="CCTV-2 财经" tvg-logo="" group-title="央视-财经",CCTV-2 财经 [备1] [1280x720|347ms|海外]
 http://74.91.26.218:82/live/cctv2hd.m3u8
-#EXTINF:-1 tvg-id="CCTV2" tvg-name="CCTV-2 财经" tvg-logo="" group-title="央视-财经",CCTV-2 财经 [备4] [1280x720|678ms|海外]
+#EXTINF:-1 tvg-id="CCTV2" tvg-name="CCTV-2 财经" tvg-logo="" group-title="央视-财经",CCTV-2 财经 [备2] [1280x720|373ms|海外]
 http://198.204.228.26/live/cctv2hd.m3u8
-#EXTINF:-1 tvg-id="CCTV3" tvg-name="CCTV-3 综艺" tvg-logo="" group-title="央视-综艺",CCTV-3 综艺 [主] [1920x1080|667ms|海外]
+#EXTINF:-1 tvg-id="CCTV2" tvg-name="CCTV-2 财经" tvg-logo="" group-title="央视-财经",CCTV-2 财经 [备3] [1280x720|397ms|海外]
+http://204.12.221.218:8181/3m1080p/cctv2.m3u8
+#EXTINF:-1 tvg-id="CCTV2" tvg-name="CCTV-2 财经" tvg-logo="" group-title="央视-财经",CCTV-2 财经 [备4] [1280x720|2934ms|海外]
+http://192.151.150.154/live/cctv2hd.m3u8
+#EXTINF:-1 tvg-id="CCTV3" tvg-name="CCTV-3 综艺" tvg-logo="" group-title="央视-综艺",CCTV-3 综艺 [主] [1920x1080|462ms|海外]
 http://107.150.60.122/live/cctv3hd.m3u8
-#EXTINF:-1 tvg-id="CCTV3" tvg-name="CCTV-3 综艺" tvg-logo="" group-title="央视-综艺",CCTV-3 综艺 [备1] [1920x1080|1134ms|海外]
+#EXTINF:-1 tvg-id="CCTV3" tvg-name="CCTV-3 综艺" tvg-logo="" group-title="央视-综艺",CCTV-3 综艺 [备1] [1920x1080|566ms|海外]
 http://69.30.245.50/live/cctv3.m3u8
-#EXTINF:-1 tvg-id="CCTV3" tvg-name="CCTV-3 综艺" tvg-logo="" group-title="央视-综艺",CCTV-3 综艺 [备2] [1280x720|549ms|海外]
+#EXTINF:-1 tvg-id="CCTV3" tvg-name="CCTV-3 综艺" tvg-logo="" group-title="央视-综艺",CCTV-3 综艺 [备2] [1280x720|422ms|海外]
 http://74.91.26.218:82/live/cctv3hd.m3u8
-#EXTINF:-1 tvg-id="CCTV3" tvg-name="CCTV-3 综艺" tvg-logo="" group-title="央视-综艺",CCTV-3 综艺 [备3] [1280x720|673ms|海外]
+#EXTINF:-1 tvg-id="CCTV3" tvg-name="CCTV-3 综艺" tvg-logo="" group-title="央视-综艺",CCTV-3 综艺 [备3] [1280x720|2431ms|海外]
 http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv3hd
-#EXTINF:-1 tvg-id="CCTV4" tvg-name="CCTV-4 中文国际" tvg-logo="" group-title="央视-国际",CCTV-4 中文国际 [主] [1920x1080|1241ms|海外]
-http://173.208.212.130:8181/1080p/cctv4.m3u8
-#EXTINF:-1 tvg-id="CCTV4" tvg-name="CCTV-4 中文国际" tvg-logo="" group-title="央视-国际",CCTV-4 中文国际 [备1] [1920x1080|1042ms|海外]
+#EXTINF:-1 tvg-id="CCTV4" tvg-name="CCTV-4 中文国际" tvg-logo="" group-title="央视-国际",CCTV-4 中文国际 [主] [1920x1080|1246ms|国内]
+https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1792148400-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-641011e5ad983cc74e778db12124bd0b&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c
+#EXTINF:-1 tvg-id="CCTV4" tvg-name="CCTV-4 中文国际" tvg-logo="" group-title="央视-国际",CCTV-4 中文国际 [备1] [1920x1080|468ms|海外]
 http://107.150.60.122/live/cctv4hd.m3u8
-#EXTINF:-1 tvg-id="CCTV4" tvg-name="CCTV-4 中文国际" tvg-logo="" group-title="央视-国际",CCTV-4 中文国际 [备2] [1280x720|2363ms|海外]
+#EXTINF:-1 tvg-id="CCTV4" tvg-name="CCTV-4 中文国际" tvg-logo="" group-title="央视-国际",CCTV-4 中文国际 [备2] [1920x1080|691ms|海外]
+http://173.208.212.130:8181/1080p/cctv4.m3u8
+#EXTINF:-1 tvg-id="CCTV4" tvg-name="CCTV-4 中文国际" tvg-logo="" group-title="央视-国际",CCTV-4 中文国际 [备3] [1920x1080|901ms|海外]
+http://38.75.136.137:98/gslb/dsdqpub/cctv4k.m3u8?auth=testpub
+#EXTINF:-1 tvg-id="CCTV4" tvg-name="CCTV-4 中文国际" tvg-logo="" group-title="央视-国际",CCTV-4 中文国际 [备4] [1280x720|304ms|海外]
 http://74.91.26.218:82/live/cctv4hd.m3u8
-#EXTINF:-1 tvg-id="CCTV4" tvg-name="CCTV-4 中文国际" tvg-logo="" group-title="央视-国际",CCTV-4 中文国际 [备3] [1280x720|1908ms|海外]
-http://207.56.13.146:81/cdnlive/cctv4.m3u8
-#EXTINF:-1 tvg-id="CCTV5" tvg-name="CCTV-5 体育" tvg-logo="" group-title="央视-体育",CCTV-5 体育 [主] [1920x1080|1395ms|海外]
-http://173.208.212.130:8181/720p/cctv5.m3u8
-#EXTINF:-1 tvg-id="CCTV5" tvg-name="CCTV-5 体育" tvg-logo="" group-title="央视-体育",CCTV-5 体育 [备1] [1920x1080|1329ms|海外]
+#EXTINF:-1 tvg-id="CCTV4" tvg-name="CCTV-4 中文国际" tvg-logo="" group-title="央视-国际",CCTV-4 中文国际 [备5] [1280x720|2233ms|海外]
+https://dash2.antik.sk/live/test_cctv_tizen/playlist.m3u8
+#EXTINF:-1 tvg-id="CCTV5" tvg-name="CCTV-5 体育" tvg-logo="" group-title="央视-体育",CCTV-5 体育 [主] [1920x1080|439ms|海外]
 http://107.150.60.122/live/cctv5hd.m3u8
-#EXTINF:-1 tvg-id="CCTV5" tvg-name="CCTV-5 体育" tvg-logo="" group-title="央视-体育",CCTV-5 体育 [备2] [1920x1080|2721ms|海外]
-http://38.75.136.137:98/gslb/dsdqpub/cctv5p.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="CCTV5" tvg-name="CCTV-5 体育" tvg-logo="" group-title="央视-体育",CCTV-5 体育 [备3] [1280x720|1571ms|海外]
+#EXTINF:-1 tvg-id="CCTV5" tvg-name="CCTV-5 体育" tvg-logo="" group-title="央视-体育",CCTV-5 体育 [备1] [1920x1080|478ms|海外]
+http://173.208.212.130:8181/720p/cctv5.m3u8
+#EXTINF:-1 tvg-id="CCTV5" tvg-name="CCTV-5 体育" tvg-logo="" group-title="央视-体育",CCTV-5 体育 [备2] [1280x720|1574ms|海外]
 http://207.56.13.146:81/cdnlive/cctv5.m3u8
-#EXTINF:-1 tvg-id="CCTV5+" tvg-name="CCTV-5+ 体育赛事" tvg-logo="" group-title="央视-体育",CCTV-5+ 体育赛事 [主] [1920x1080|4275ms|国内]
-http://120.76.248.139/live/bfgd/4200000246.m3u8
-#EXTINF:-1 tvg-id="CCTV5+" tvg-name="CCTV-5+ 体育赛事" tvg-logo="" group-title="央视-体育",CCTV-5+ 体育赛事 [备1] [1280x720|1011ms|海外]
+#EXTINF:-1 tvg-id="CCTV5+" tvg-name="CCTV-5+ 体育赛事" tvg-logo="" group-title="央视-体育",CCTV-5+ 体育赛事 [主] [1280x720|390ms|海外]
 http://38.75.136.137:98/gslb/dsdqbv/cctv5p.m3u8?auth=test20251009
-#EXTINF:-1 tvg-id="CCTV6" tvg-name="CCTV-6 电影" tvg-logo="" group-title="央视-电影",CCTV-6 电影 [主] [1280x720|681ms|海外]
-http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv6hd
-#EXTINF:-1 tvg-id="CCTV6" tvg-name="CCTV-6 电影" tvg-logo="" group-title="央视-电影",CCTV-6 电影 [备1] [1280x720|514ms|海外]
+#EXTINF:-1 tvg-id="CCTV6" tvg-name="CCTV-6 电影" tvg-logo="" group-title="央视-电影",CCTV-6 电影 [主] [1280x720|322ms|海外]
 http://69.30.245.50/live/cctv6.m3u8
-#EXTINF:-1 tvg-id="CCTV6" tvg-name="CCTV-6 电影" tvg-logo="" group-title="央视-电影",CCTV-6 电影 [备2] [1280x720|701ms|海外]
-http://198.204.240.250:82/live/cctv6.m3u8
-#EXTINF:-1 tvg-id="CCTV6" tvg-name="CCTV-6 电影" tvg-logo="" group-title="央视-电影",CCTV-6 电影 [备3] [1280x720|605ms|海外]
-http://198.204.228.26/live/cctv6hd.m3u8
-#EXTINF:-1 tvg-id="CCTV6" tvg-name="CCTV-6 电影" tvg-logo="" group-title="央视-电影",CCTV-6 电影 [备4] [1280x720|1636ms|海外]
+#EXTINF:-1 tvg-id="CCTV6" tvg-name="CCTV-6 电影" tvg-logo="" group-title="央视-电影",CCTV-6 电影 [备1] [1280x720|369ms|海外]
 http://74.91.26.218:82/live/cctv6hd.m3u8
-#EXTINF:-1 tvg-id="CCTV7" tvg-name="CCTV-7 国防军事" tvg-logo="" group-title="央视-军事",CCTV-7 国防军事 [主] [IPv6·国内]
-http://gslbserv.itv.cmvideo.cn/1000000001000024341/1.m3u8?channel-id=ystenlive&Contentid=1000000001000024341&livemode=1&stbId=3
-#EXTINF:-1 tvg-id="CCTV7" tvg-name="CCTV-7 国防军事" tvg-logo="" group-title="央视-军事",CCTV-7 国防军事 [备1] [1280x720|1697ms|海外]
+#EXTINF:-1 tvg-id="CCTV6" tvg-name="CCTV-6 电影" tvg-logo="" group-title="央视-电影",CCTV-6 电影 [备2] [1280x720|370ms|海外]
+http://198.204.240.250:82/live/cctv6.m3u8
+#EXTINF:-1 tvg-id="CCTV6" tvg-name="CCTV-6 电影" tvg-logo="" group-title="央视-电影",CCTV-6 电影 [备3] [1280x720|1752ms|海外]
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv6hd
+#EXTINF:-1 tvg-id="CCTV6" tvg-name="CCTV-6 电影" tvg-logo="" group-title="央视-电影",CCTV-6 电影 [备4] [1280x720|1207ms|海外]
+http://198.204.228.26/live/cctv6hd.m3u8
+#EXTINF:-1 tvg-id="CCTV7" tvg-name="CCTV-7 国防军事" tvg-logo="" group-title="央视-军事",CCTV-7 国防军事 [主] [1920x1080|441ms|海外]
+http://107.150.60.122/live/cctv7hd.m3u8
+#EXTINF:-1 tvg-id="CCTV7" tvg-name="CCTV-7 国防军事" tvg-logo="" group-title="央视-军事",CCTV-7 国防军事 [备1] [1920x1080|514ms|海外]
+http://69.30.245.50/live/cctv7.m3u8
+#EXTINF:-1 tvg-id="CCTV7" tvg-name="CCTV-7 国防军事" tvg-logo="" group-title="央视-军事",CCTV-7 国防军事 [备2] [1920x1080|1740ms|海外]
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv7hd
+#EXTINF:-1 tvg-id="CCTV7" tvg-name="CCTV-7 国防军事" tvg-logo="" group-title="央视-军事",CCTV-7 国防军事 [备3] [1280x720|366ms|海外]
 http://74.91.26.218:82/live/cctv7hd.m3u8
-#EXTINF:-1 tvg-id="CCTV7" tvg-name="CCTV-7 国防军事" tvg-logo="" group-title="央视-军事",CCTV-7 国防军事 [备2] [1280x720|2174ms|海外]
+#EXTINF:-1 tvg-id="CCTV7" tvg-name="CCTV-7 国防军事" tvg-logo="" group-title="央视-军事",CCTV-7 国防军事 [备4] [1280x720|1884ms|海外]
 http://207.56.13.146:81/cdnlive/cctv7.m3u8
-#EXTINF:-1 tvg-id="CCTV8" tvg-name="CCTV-8 电视剧" tvg-logo="" group-title="央视-电视剧",CCTV-8 电视剧 [主] [1920x1080|668ms|海外]
+#EXTINF:-1 tvg-id="CCTV8" tvg-name="CCTV-8 电视剧" tvg-logo="" group-title="央视-电视剧",CCTV-8 电视剧 [主] [1920x1080|5454ms|国内]
+http://124.165.251.82:85/tsfile/live/0008_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="CCTV8" tvg-name="CCTV-8 电视剧" tvg-logo="" group-title="央视-电视剧",CCTV-8 电视剧 [备1] [1920x1080|392ms|海外]
 http://192.151.150.154/live/cctv8k.m3u8
-#EXTINF:-1 tvg-id="CCTV8" tvg-name="CCTV-8 电视剧" tvg-logo="" group-title="央视-电视剧",CCTV-8 电视剧 [备1] [1920x1080|727ms|海外]
-http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv8k
-#EXTINF:-1 tvg-id="CCTV8" tvg-name="CCTV-8 电视剧" tvg-logo="" group-title="央视-电视剧",CCTV-8 电视剧 [备2] [1280x720|432ms|海外]
+#EXTINF:-1 tvg-id="CCTV8" tvg-name="CCTV-8 电视剧" tvg-logo="" group-title="央视-电视剧",CCTV-8 电视剧 [备2] [1280x720|319ms|海外]
 http://69.30.245.50/live/cctv8.m3u8
-#EXTINF:-1 tvg-id="CCTV8" tvg-name="CCTV-8 电视剧" tvg-logo="" group-title="央视-电视剧",CCTV-8 电视剧 [备3] [1280x720|1456ms|海外]
+#EXTINF:-1 tvg-id="CCTV8" tvg-name="CCTV-8 电视剧" tvg-logo="" group-title="央视-电视剧",CCTV-8 电视剧 [备3] [1280x720|350ms|海外]
 http://74.91.26.218:82/live/cctv8hd.m3u8
-#EXTINF:-1 tvg-id="CCTV8" tvg-name="CCTV-8 电视剧" tvg-logo="" group-title="央视-电视剧",CCTV-8 电视剧 [备4] [1280x720|2010ms|海外]
+#EXTINF:-1 tvg-id="CCTV8" tvg-name="CCTV-8 电视剧" tvg-logo="" group-title="央视-电视剧",CCTV-8 电视剧 [备4] [1280x720|1891ms|海外]
 http://207.56.13.146:81/cdnlive/cctv8.m3u8
-#EXTINF:-1 tvg-id="CCTV9" tvg-name="CCTV-9 纪录" tvg-logo="" group-title="央视-纪录",CCTV-9 纪录 [主] [1920x1080|1829ms|海外]
-http://198.204.228.26/live/cctv9hd.m3u8
-#EXTINF:-1 tvg-id="CCTV9" tvg-name="CCTV-9 纪录" tvg-logo="" group-title="央视-纪录",CCTV-9 纪录 [备1] [1920x1080|1139ms|海外]
-http://192.151.150.154/live/cctv9hd.m3u8
-#EXTINF:-1 tvg-id="CCTV9" tvg-name="CCTV-9 纪录" tvg-logo="" group-title="央视-纪录",CCTV-9 纪录 [备2] [1280x720|560ms|海外]
-http://74.91.26.218:82/live/cctv9hd.m3u8
-#EXTINF:-1 tvg-id="CCTV9" tvg-name="CCTV-9 纪录" tvg-logo="" group-title="央视-纪录",CCTV-9 纪录 [备3] [1280x720|1029ms|海外]
-http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv9hd
-#EXTINF:-1 tvg-id="CCTV9" tvg-name="CCTV-9 纪录" tvg-logo="" group-title="央视-纪录",CCTV-9 纪录 [备4] [1920x1080|2797ms|海外]
+#EXTINF:-1 tvg-id="CCTV8" tvg-name="CCTV-8 电视剧" tvg-logo="" group-title="央视-电视剧",CCTV-8 电视剧 [备5] [1280x720|1244ms|海外]
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv8k
+#EXTINF:-1 tvg-id="CCTV9" tvg-name="CCTV-9 纪录" tvg-logo="" group-title="央视-纪录",CCTV-9 纪录 [主] [1920x1080|544ms|海外]
 http://107.150.60.122/live/cctv9hd.m3u8
-#EXTINF:-1 tvg-id="CCTV9" tvg-name="CCTV-9 纪录" tvg-logo="" group-title="央视-纪录",CCTV-9 纪录 [备5] [720x576|4214ms|海外]
-https://v4-e6b1c5baf4e240fe63adbf68dda23435.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=2e8cfd44d693e175b1fdad8815204076
-#EXTINF:-1 tvg-id="CCTV10" tvg-name="CCTV-10 科教" tvg-logo="" group-title="央视-科教",CCTV-10 科教 [主] [1920x1080|1747ms|海外]
+#EXTINF:-1 tvg-id="CCTV9" tvg-name="CCTV-9 纪录" tvg-logo="" group-title="央视-纪录",CCTV-9 纪录 [备1] [1920x1080|528ms|海外]
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv9hd
+#EXTINF:-1 tvg-id="CCTV9" tvg-name="CCTV-9 纪录" tvg-logo="" group-title="央视-纪录",CCTV-9 纪录 [备2] [1920x1080|463ms|海外]
+http://198.204.228.26/live/cctv9hd.m3u8
+#EXTINF:-1 tvg-id="CCTV9" tvg-name="CCTV-9 纪录" tvg-logo="" group-title="央视-纪录",CCTV-9 纪录 [备3] [1280x720|470ms|海外]
+http://74.91.26.218:82/live/cctv9hd.m3u8
+#EXTINF:-1 tvg-id="CCTV9" tvg-name="CCTV-9 纪录" tvg-logo="" group-title="央视-纪录",CCTV-9 纪录 [备4] [1280x720|858ms|海外]
+http://192.151.150.154/live/cctv9hd.m3u8
+#EXTINF:-1 tvg-id="CCTV9" tvg-name="CCTV-9 纪录" tvg-logo="" group-title="央视-纪录",CCTV-9 纪录 [备5] [720x576|5150ms|海外]
+https://v4-702cae17a28d6e4f0c0002bba021d934.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=617c65e41c32659331c3521cb502f2d4
+#EXTINF:-1 tvg-id="CCTV10" tvg-name="CCTV-10 科教" tvg-logo="" group-title="央视-科教",CCTV-10 科教 [主] [1920x1080|558ms|海外]
 http://69.30.245.50/live/cctv10.m3u8
-#EXTINF:-1 tvg-id="CCTV10" tvg-name="CCTV-10 科教" tvg-logo="" group-title="央视-科教",CCTV-10 科教 [备1] [1280x720|508ms|海外]
-http://38.75.136.137:98/gslb/dsdqbv/cctv10hd.m3u8?auth=test20251009
-#EXTINF:-1 tvg-id="CCTV10" tvg-name="CCTV-10 科教" tvg-logo="" group-title="央视-科教",CCTV-10 科教 [备2] [1280x720|478ms|海外]
-http://74.91.26.218:82/live/cctv10hd.m3u8
-#EXTINF:-1 tvg-id="CCTV10" tvg-name="CCTV-10 科教" tvg-logo="" group-title="央视-科教",CCTV-10 科教 [备3] [1920x1080|1057ms|海外]
+#EXTINF:-1 tvg-id="CCTV10" tvg-name="CCTV-10 科教" tvg-logo="" group-title="央视-科教",CCTV-10 科教 [备1] [1920x1080|576ms|海外]
 http://204.12.221.218:8181/3m1080p/cctv10.m3u8
-#EXTINF:-1 tvg-id="CCTV10" tvg-name="CCTV-10 科教" tvg-logo="" group-title="央视-科教",CCTV-10 科教 [备4] [720x576|12019ms|海外]
+#EXTINF:-1 tvg-id="CCTV10" tvg-name="CCTV-10 科教" tvg-logo="" group-title="央视-科教",CCTV-10 科教 [备2] [1280x720|339ms|海外]
+http://74.91.26.218:82/live/cctv10hd.m3u8
+#EXTINF:-1 tvg-id="CCTV10" tvg-name="CCTV-10 科教" tvg-logo="" group-title="央视-科教",CCTV-10 科教 [备3] [1280x720|376ms|海外]
+http://38.75.136.137:98/gslb/dsdqbv/cctv10hd.m3u8?auth=test20251009
+#EXTINF:-1 tvg-id="CCTV10" tvg-name="CCTV-10 科教" tvg-logo="" group-title="央视-科教",CCTV-10 科教 [备4] [720x576|9202ms|海外]
 https://cdn4.skygo.mn/live/disk1/CCTV-10/HLSv3-FTA/CCTV-10.m3u8
-#EXTINF:-1 tvg-id="CCTV11" tvg-name="CCTV-11 戏曲" tvg-logo="" group-title="央视-戏曲",CCTV-11 戏曲 [主] [1920x1080|2258ms|海外]
+#EXTINF:-1 tvg-id="CCTV11" tvg-name="CCTV-11 戏曲" tvg-logo="" group-title="央视-戏曲",CCTV-11 戏曲 [主] [1920x1080|573ms|海外]
 http://204.12.221.218:8181/3m1080p/cctv11.m3u8
-#EXTINF:-1 tvg-id="CCTV11" tvg-name="CCTV-11 戏曲" tvg-logo="" group-title="央视-戏曲",CCTV-11 戏曲 [备1] [1920x1080|2159ms|海外]
+#EXTINF:-1 tvg-id="CCTV11" tvg-name="CCTV-11 戏曲" tvg-logo="" group-title="央视-戏曲",CCTV-11 戏曲 [备1] [1920x1080|602ms|海外]
 http://198.204.228.26/live/cctv11hd.m3u8
-#EXTINF:-1 tvg-id="CCTV11" tvg-name="CCTV-11 戏曲" tvg-logo="" group-title="央视-戏曲",CCTV-11 戏曲 [备2] [1920x1080|1158ms|海外]
+#EXTINF:-1 tvg-id="CCTV11" tvg-name="CCTV-11 戏曲" tvg-logo="" group-title="央视-戏曲",CCTV-11 戏曲 [备2] [1920x1080|615ms|海外]
 http://38.75.136.137:98/gslb/dsdqpub/cctv11hd.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="CCTV11" tvg-name="CCTV-11 戏曲" tvg-logo="" group-title="央视-戏曲",CCTV-11 戏曲 [备3] [1280x720|5498ms|海外]
+#EXTINF:-1 tvg-id="CCTV11" tvg-name="CCTV-11 戏曲" tvg-logo="" group-title="央视-戏曲",CCTV-11 戏曲 [备3] [1280x720|364ms|海外]
 http://74.91.26.218:82/live/cctv11hd.m3u8
-#EXTINF:-1 tvg-id="CCTV11" tvg-name="CCTV-11 戏曲" tvg-logo="" group-title="央视-戏曲",CCTV-11 戏曲 [备4] [1280x720|444ms|海外]
+#EXTINF:-1 tvg-id="CCTV11" tvg-name="CCTV-11 戏曲" tvg-logo="" group-title="央视-戏曲",CCTV-11 戏曲 [备4] [1280x720|418ms|海外]
 http://38.75.136.137:98/gslb/dsdqbv/cctv11hd.m3u8?auth=test20251009
-#EXTINF:-1 tvg-id="CCTV12" tvg-name="CCTV-12 社会与法" tvg-logo="" group-title="央视-社会与法",CCTV-12 社会与法 [主] [1920x1080|1265ms|海外]
-http://38.75.136.137:98/gslb/dsdqpub/cctv12hd.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="CCTV12" tvg-name="CCTV-12 社会与法" tvg-logo="" group-title="央视-社会与法",CCTV-12 社会与法 [备1] [1920x1080|3271ms|海外]
-http://204.12.221.218:8181/3m1080p/cctv12.m3u8
-#EXTINF:-1 tvg-id="CCTV12" tvg-name="CCTV-12 社会与法" tvg-logo="" group-title="央视-社会与法",CCTV-12 社会与法 [备2] [1280x720|422ms|海外]
-http://38.75.136.137:98/gslb/dsdqbv/cctv12hd.m3u8?auth=test20251009
-#EXTINF:-1 tvg-id="CCTV12" tvg-name="CCTV-12 社会与法" tvg-logo="" group-title="央视-社会与法",CCTV-12 社会与法 [备3] [1280x720|760ms|海外]
-http://74.91.26.218:82/live/cctv12hd.m3u8
-#EXTINF:-1 tvg-id="CCTV12" tvg-name="CCTV-12 社会与法" tvg-logo="" group-title="央视-社会与法",CCTV-12 社会与法 [备4] [1920x1080|6623ms|海外]
+#EXTINF:-1 tvg-id="CCTV12" tvg-name="CCTV-12 社会与法" tvg-logo="" group-title="央视-社会与法",CCTV-12 社会与法 [主] [1920x1080|482ms|海外]
 http://107.150.60.122/live/cctv12hd.m3u8
+#EXTINF:-1 tvg-id="CCTV12" tvg-name="CCTV-12 社会与法" tvg-logo="" group-title="央视-社会与法",CCTV-12 社会与法 [备1] [1920x1080|584ms|海外]
+http://204.12.221.218:8181/3m1080p/cctv12.m3u8
+#EXTINF:-1 tvg-id="CCTV12" tvg-name="CCTV-12 社会与法" tvg-logo="" group-title="央视-社会与法",CCTV-12 社会与法 [备2] [1920x1080|510ms|海外]
+http://38.75.136.137:98/gslb/dsdqpub/cctv12hd.m3u8?auth=testpub
+#EXTINF:-1 tvg-id="CCTV12" tvg-name="CCTV-12 社会与法" tvg-logo="" group-title="央视-社会与法",CCTV-12 社会与法 [备3] [1280x720|506ms|海外]
+http://74.91.26.218:82/live/cctv12hd.m3u8
+#EXTINF:-1 tvg-id="CCTV12" tvg-name="CCTV-12 社会与法" tvg-logo="" group-title="央视-社会与法",CCTV-12 社会与法 [备4] [1280x720|552ms|海外]
+http://38.75.136.137:98/gslb/dsdqbv/cctv12hd.m3u8?auth=test20251009
 #EXTINF:-1 tvg-id="CCTV13" tvg-name="CCTV-13 新闻" tvg-logo="" group-title="央视-新闻",CCTV-13 新闻 [主] [1280x720|4289ms|海外] ✓已核验
 http://74.91.26.218:82/live/cctv13hd.m3u8
 #EXTINF:-1 tvg-id="CCTV13" tvg-name="CCTV-13 新闻" tvg-logo="" group-title="央视-新闻",CCTV-13 新闻 [备1] [1280x720|4613ms|海外] ✓已核验
@@ -132,41 +138,45 @@ http://107.150.60.122/live/cctv13hd.m3u8
 http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv13hd
 #EXTINF:-1 tvg-id="CCTV13" tvg-name="CCTV-13 新闻" tvg-logo="" group-title="央视-新闻",CCTV-13 新闻 [备4] [1280x720|2200ms|海外] ✓已核验
 http://go.bkpcp.top/mg/cctv13
-#EXTINF:-1 tvg-id="CCTV13" tvg-name="CCTV-13 新闻" tvg-logo="" group-title="央视-新闻",CCTV-13 新闻 [备5] [1920x1080|676ms|海外]
-http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv13hd
-#EXTINF:-1 tvg-id="CCTV14" tvg-name="CCTV-14 少儿" tvg-logo="" group-title="央视-少儿",CCTV-14 少儿 [主] [1280x720|519ms|海外]
-http://74.91.26.218:82/live/cctv14hd.m3u8
-#EXTINF:-1 tvg-id="CCTV14" tvg-name="CCTV-14 少儿" tvg-logo="" group-title="央视-少儿",CCTV-14 少儿 [备1] [1280x720|1569ms|海外]
-http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv14hd
-#EXTINF:-1 tvg-id="CCTV14" tvg-name="CCTV-14 少儿" tvg-logo="" group-title="央视-少儿",CCTV-14 少儿 [备2] [1280x720|4334ms|海外]
-http://198.204.228.26/live/cctv14hd.m3u8
-#EXTINF:-1 tvg-id="CCTV14" tvg-name="CCTV-14 少儿" tvg-logo="" group-title="央视-少儿",CCTV-14 少儿 [备3] [1280x720|463ms|海外]
+#EXTINF:-1 tvg-id="CCTV13" tvg-name="CCTV-13 新闻" tvg-logo="" group-title="央视-新闻",CCTV-13 新闻 [备5] [1920x1080|3034ms|国内]
+http://120.76.248.139/live/bfgd/4200000067.m3u8
+#EXTINF:-1 tvg-id="CCTV14" tvg-name="CCTV-14 少儿" tvg-logo="" group-title="央视-少儿",CCTV-14 少儿 [主] [1280x720|391ms|海外]
 http://204.12.221.218:8181/3m1080p/cctv14.m3u8
-#EXTINF:-1 tvg-id="CCTV14" tvg-name="CCTV-14 少儿" tvg-logo="" group-title="央视-少儿",CCTV-14 少儿 [备4] [1280x720|531ms|海外]
+#EXTINF:-1 tvg-id="CCTV14" tvg-name="CCTV-14 少儿" tvg-logo="" group-title="央视-少儿",CCTV-14 少儿 [备1] [1280x720|351ms|海外]
+http://198.204.228.26/live/cctv14hd.m3u8
+#EXTINF:-1 tvg-id="CCTV14" tvg-name="CCTV-14 少儿" tvg-logo="" group-title="央视-少儿",CCTV-14 少儿 [备2] [1280x720|430ms|海外]
 http://38.75.136.137:98/gslb/dsdqbv/cctv14hd.m3u8?auth=test20251009
-#EXTINF:-1 tvg-id="CCTV15" tvg-name="CCTV-15 音乐" tvg-logo="" group-title="央视-音乐",CCTV-15 音乐 [主] [1280x720|647ms|海外]
-http://204.12.221.218:8181/3m1080p/cctv15.m3u8
-#EXTINF:-1 tvg-id="CCTV15" tvg-name="CCTV-15 音乐" tvg-logo="" group-title="央视-音乐",CCTV-15 音乐 [备1] [1280x720|1859ms|海外]
+#EXTINF:-1 tvg-id="CCTV14" tvg-name="CCTV-14 少儿" tvg-logo="" group-title="央视-少儿",CCTV-14 少儿 [备3] [1280x720|427ms|海外]
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv14hd
+#EXTINF:-1 tvg-id="CCTV14" tvg-name="CCTV-14 少儿" tvg-logo="" group-title="央视-少儿",CCTV-14 少儿 [备4] [1280x720|407ms|海外]
+http://74.91.26.218:82/live/cctv14hd.m3u8
+#EXTINF:-1 tvg-id="CCTV15" tvg-name="CCTV-15 音乐" tvg-logo="" group-title="央视-音乐",CCTV-15 音乐 [主] [1920x1080|2853ms|国内]
+http://120.76.248.139/live/bfgd/4200000133.m3u8
+#EXTINF:-1 tvg-id="CCTV15" tvg-name="CCTV-15 音乐" tvg-logo="" group-title="央视-音乐",CCTV-15 音乐 [备1] [1280x720|317ms|海外]
 http://74.91.26.218:82/live/cctv15hd.m3u8
-#EXTINF:-1 tvg-id="CCTV15" tvg-name="CCTV-15 音乐" tvg-logo="" group-title="央视-音乐",CCTV-15 音乐 [备2] [1280x720|650ms|海外]
-http://198.204.228.26/live/cctv15hd.m3u8
-#EXTINF:-1 tvg-id="CCTV15" tvg-name="CCTV-15 音乐" tvg-logo="" group-title="央视-音乐",CCTV-15 音乐 [备3] [1280x720|674ms|海外]
-http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv15hd
-#EXTINF:-1 tvg-id="CCTV15" tvg-name="CCTV-15 音乐" tvg-logo="" group-title="央视-音乐",CCTV-15 音乐 [备4] [1280x720|679ms|海外]
+#EXTINF:-1 tvg-id="CCTV15" tvg-name="CCTV-15 音乐" tvg-logo="" group-title="央视-音乐",CCTV-15 音乐 [备2] [1280x720|354ms|海外]
 http://38.75.136.137:98/gslb/dsdqbv/cctv15hd.m3u8?auth=test20251009
-#EXTINF:-1 tvg-id="CCTV16" tvg-name="CCTV-16 奥林匹克" tvg-logo="" group-title="央视-体育",CCTV-16 奥林匹克 [主] [1920x1080|1138ms|海外]
+#EXTINF:-1 tvg-id="CCTV15" tvg-name="CCTV-15 音乐" tvg-logo="" group-title="央视-音乐",CCTV-15 音乐 [备3] [1280x720|1244ms|海外]
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv15hd
+#EXTINF:-1 tvg-id="CCTV15" tvg-name="CCTV-15 音乐" tvg-logo="" group-title="央视-音乐",CCTV-15 音乐 [备4] [1280x720|317ms|海外]
+http://204.12.221.218:8181/3m1080p/cctv15.m3u8
+#EXTINF:-1 tvg-id="CCTV15" tvg-name="CCTV-15 音乐" tvg-logo="" group-title="央视-音乐",CCTV-15 音乐 [备5] [1280x720|350ms|海外]
+http://198.204.228.26/live/cctv15hd.m3u8
+#EXTINF:-1 tvg-id="CCTV16" tvg-name="CCTV-16 奥林匹克" tvg-logo="" group-title="央视-体育",CCTV-16 奥林匹克 [主] [1920x1080|1872ms|海外]
 http://38.75.136.137:98/gslb/dsdqpub/cctv16hd.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="CCTV16" tvg-name="CCTV-16 奥林匹克" tvg-logo="" group-title="央视-体育",CCTV-16 奥林匹克 [备1] [1280x720|483ms|海外]
+#EXTINF:-1 tvg-id="CCTV16" tvg-name="CCTV-16 奥林匹克" tvg-logo="" group-title="央视-体育",CCTV-16 奥林匹克 [备1] [1280x720|442ms|海外]
 http://38.75.136.137:98/gslb/dsdqbv/cctv16hd.m3u8?auth=test20251009
-#EXTINF:-1 tvg-id="CCTV16" tvg-name="CCTV-16 奥林匹克" tvg-logo="" group-title="央视-体育",CCTV-16 奥林匹克 [备2] [1280x720|3815ms|海外]
+#EXTINF:-1 tvg-id="CCTV16" tvg-name="CCTV-16 奥林匹克" tvg-logo="" group-title="央视-体育",CCTV-16 奥林匹克 [备2] [1280x720|1642ms|海外]
 http://207.56.13.146:81/cdnlive/cctv16.m3u8
-#EXTINF:-1 tvg-id="CCTV17" tvg-name="CCTV-17 农业农村" tvg-logo="" group-title="央视-农业",CCTV-17 农业农村 [主] [1920x1080|681ms|海外]
+#EXTINF:-1 tvg-id="CCTV17" tvg-name="CCTV-17 农业农村" tvg-logo="" group-title="央视-农业",CCTV-17 农业农村 [主] [1920x1080|3005ms|国内]
+http://120.76.248.139/live/bfgd/4200000204.m3u8
+#EXTINF:-1 tvg-id="CCTV17" tvg-name="CCTV-17 农业农村" tvg-logo="" group-title="央视-农业",CCTV-17 农业农村 [备1] [1920x1080|423ms|海外]
 http://74.91.26.218:82/live/cctv17hd.m3u8
-#EXTINF:-1 tvg-id="CCTV17" tvg-name="CCTV-17 农业农村" tvg-logo="" group-title="央视-农业",CCTV-17 农业农村 [备1] [1920x1080|997ms|海外]
-http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv17hd
-#EXTINF:-1 tvg-id="CCTV17" tvg-name="CCTV-17 农业农村" tvg-logo="" group-title="央视-农业",CCTV-17 农业农村 [备2] [1280x720|651ms|海外]
+#EXTINF:-1 tvg-id="CCTV17" tvg-name="CCTV-17 农业农村" tvg-logo="" group-title="央视-农业",CCTV-17 农业农村 [备2] [1280x720|379ms|海外]
 http://38.75.136.137:98/gslb/dsdqbv/cctv17hd.m3u8?auth=test20251009
-#EXTINF:-1 tvg-id="CCTV4K" tvg-name="CCTV-4K 超高清" tvg-logo="" group-title="央视-超高清",CCTV-4K 超高清 [主] [IPv6·国内]
-http://ott.js.chinamobile.com/TVOD/3/224/3221228242/index.m3u8
+#EXTINF:-1 tvg-id="CCTV17" tvg-name="CCTV-17 农业农村" tvg-logo="" group-title="央视-农业",CCTV-17 农业农村 [备3] [1280x720|1828ms|海外]
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv17hd
+#EXTINF:-1 tvg-id="CCTV4K" tvg-name="CCTV-4K 超高清" tvg-logo="" group-title="央视-超高清",CCTV-4K 超高清 [主] [1920x1080|2622ms|国内]
+https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1792148400-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-05e26fc072456a3fdb0cfae03c229555&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c
 #EXTINF:-1 tvg-id="CCTV4K" tvg-name="CCTV-4K 超高清" tvg-logo="" group-title="央视-超高清",CCTV-4K 超高清 [备1] [IPv6·国内]
-https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4k_mbd.m3u8?auth_key=1791766800-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-7d9ba6a496e64bbd73a833c6622a2f0a&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c
+http://ott.js.chinamobile.com/TVOD/3/224/3221228242/index.m3u8
